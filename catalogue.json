@@ -1,0 +1,257 @@
+{
+  "downloadBase": "https://raw.githubusercontent.com/neuratim/moodlo-music/main",
+  "generatedAt": "2026-09-13T06:46:38.659850Z",
+  "genres": [
+    "Acoustic",
+    "Ambient",
+    "Brass",
+    "Caribbean",
+    "Classical",
+    "Country",
+    "Electronic",
+    "Folk",
+    "Funk",
+    "Hip-hop",
+    "Jazz",
+    "Latin",
+    "Percussion",
+    "Pop",
+    "R&B",
+    "Rock",
+    "Soul",
+    "Vocal"
+  ],
+  "licence": "CC0 1.0 Universal (public domain). Composed for NeuraTiM with generative AI. No attribution required.",
+  "revision": 1,
+  "schema": 1,
+  "tracks": [
+    {
+      "age": "0-3",
+      "bpm": 72,
+      "content": "all-ages-clean",
+      "energy": 1,
+      "genre": "Folk",
+      "id": "001",
+      "key": "D major",
+      "language": "None",
+      "lengthSeconds": 150,
+      "meter": "6/8",
+      "moods": [
+        "comfort",
+        "wonder"
+      ],
+      "style": "ambient acoustic lullaby",
+      "title": "Pocket Sunrise",
+      "use": "quiet play",
+      "versions": [
+        {
+          "bytes": 3468165,
+          "id": "a",
+          "name": "Curious Daylight",
+          "path": "tracks/001/001-a.mp3",
+          "seconds": 155,
+          "sha256": "dee8005b6e3fe0da2c9e856ba2a9c09eb8f8d48bc3599c1a90526e2cf2feb63c"
+        },
+        {
+          "bytes": 3546309,
+          "id": "b",
+          "name": "Curious Daylight",
+          "path": "tracks/001/001-b.mp3",
+          "seconds": 155,
+          "sha256": "c3b5bc8f0a24c740fb4c366d972ec252e53a78974c3fe4e41a2b2aa5ee400079"
+        }
+      ],
+      "vocals": "Instrumental"
+    },
+    {
+      "age": "0-3",
+      "bpm": 84,
+      "content": "all-ages-clean",
+      "energy": 1,
+      "genre": "Classical",
+      "id": "002",
+      "key": "F major",
+      "language": "Non-lexical",
+      "lengthSeconds": 165,
+      "meter": "3/4",
+      "moods": [
+        "gentleness",
+        "delight"
+      ],
+      "style": "miniature chamber waltz",
+      "title": "Cloud Carousel",
+      "use": "caregiver cuddle",
+      "versions": [
+        {
+          "bytes": 3793437,
+          "id": "a",
+          "name": "Held F6 Waltz",
+          "path": "tracks/002/002-a.mp3",
+          "seconds": 165,
+          "sha256": "5b6b40eeca52b50dccc1ed1d76c6bb42d041c32effd8f340b5d78221b10429a4"
+        },
+        {
+          "bytes": 3806541,
+          "id": "b",
+          "name": "Valle de la Luna",
+          "path": "tracks/002/002-b.mp3",
+          "seconds": 165,
+          "sha256": "a687dfe523d70e2cc6572f8601ee25c5976271a4654779514b19e240a1a53e03"
+        }
+      ],
+      "vocals": "Wordless"
+    },
+    {
+      "age": "0-3",
+      "bpm": 92,
+      "content": "all-ages-clean",
+      "energy": 2,
+      "genre": "Jazz",
+      "id": "003",
+      "key": "C major",
+      "language": "English",
+      "lengthSeconds": 135,
+      "meter": "4/4",
+      "moods": [
+        "playfulness",
+        "affection"
+      ],
+      "style": "soft toybox swing",
+      "title": "Peach Socks",
+      "use": "gentle movement",
+      "versions": [
+        {
+          "bytes": 3138285,
+          "id": "a",
+          "name": "Peach Socks, Little Toes",
+          "path": "tracks/003/003-a.mp3",
+          "seconds": 135,
+          "sha256": "350f9f35aa80ba99b16a417896c613570b30aa810309dd6ba4975712a756fff7"
+        },
+        {
+          "bytes": 3125517,
+          "id": "b",
+          "name": "Peach Socks, Little Toes",
+          "path": "tracks/003/003-b.mp3",
+          "seconds": 135,
+          "sha256": "76a0b4c8c02ab0d0d51b71a242fa2b0f49d00b15a1da14c9461e886e6591ab8c"
+        }
+      ],
+      "vocals": "Lyrical"
+    },
+    {
+      "age": "0-3",
+      "bpm": 64,
+      "content": "all-ages-clean",
+      "energy": 1,
+      "genre": "Electronic",
+      "id": "004",
+      "key": "A major",
+      "language": "None",
+      "lengthSeconds": 180,
+      "meter": "4/4",
+      "moods": [
+        "calm",
+        "curiosity"
+      ],
+      "style": "soft ambient electronica",
+      "title": "Little Window Rain",
+      "use": "quiet looking",
+      "versions": [
+        {
+          "bytes": 4117677,
+          "id": "a",
+          "name": "Open Interval",
+          "path": "tracks/004/004-a.mp3",
+          "seconds": 180,
+          "sha256": "c8f3226d13dc07ffc7b27af42db81f5fc57011893114d923a01fec72fb953fe5"
+        },
+        {
+          "bytes": 3972333,
+          "id": "b",
+          "name": "Open Interval",
+          "path": "tracks/004/004-b.mp3",
+          "seconds": 180,
+          "sha256": "811b63799303478b0e9c4cd6f70b37b2aa775e00c4208f5744e70932657de2cb"
+        }
+      ],
+      "vocals": "Instrumental"
+    },
+    {
+      "age": "0-3",
+      "bpm": 80,
+      "content": "all-ages-clean",
+      "energy": 1,
+      "genre": "Acoustic",
+      "id": "005",
+      "key": "G major",
+      "language": "Non-lexical",
+      "lengthSeconds": 155,
+      "meter": "6/8",
+      "moods": [
+        "warmth",
+        "reassurance"
+      ],
+      "style": "harp and humming miniature",
+      "title": "Hummingbird Quilt",
+      "use": "family wind-down",
+      "versions": [
+        {
+          "bytes": 3780045,
+          "id": "a",
+          "name": "G Major Hum",
+          "path": "tracks/005/005-a.mp3",
+          "seconds": 155,
+          "sha256": "3753475ca32dc85cffb0bf99c1055dd60cd75069ebe6f71db2bd13a5242d122c"
+        },
+        {
+          "bytes": 3740637,
+          "id": "b",
+          "name": "Harp and Recorder",
+          "path": "tracks/005/005-b.mp3",
+          "seconds": 155,
+          "sha256": "e8d7fb875ed670b4cb93b1890afa5b5e276e53bdaafb07b27cfde9caf7c779f0"
+        }
+      ],
+      "vocals": "Wordless"
+    },
+    {
+      "age": "0-3",
+      "bpm": 96,
+      "content": "all-ages-clean",
+      "energy": 2,
+      "genre": "Percussion",
+      "id": "006",
+      "key": "Eb major",
+      "language": "None",
+      "lengthSeconds": 125,
+      "meter": "4/4",
+      "moods": [
+        "delight",
+        "gentle energy"
+      ],
+      "style": "wooden miniature groove",
+      "title": "Round Pebble Parade",
+      "use": "supervised play",
+      "versions": [
+        {
+          "bytes": 2818461,
+          "id": "a",
+          "name": "Gentle Gathering",
+          "path": "tracks/006/006-a.mp3",
+          "seconds": 125,
+          "sha256": "6b3a5c6164521408ac7bce2b7026eb657bafa7673f9952d691185f1992709d2d"
+        },
+        {
+          "bytes": 2935869,
+          "id": "b",
+          "name": "Gentle Gathering",
+          "path": "tracks/006/006-b.mp3",
+          "seconds": 125,
+          "sha256": "648d2db07d421606bd87c69b73a28fcc51025c30c073b65e47c1a970d33c608a"
+        }
+      ],
+      "vocals": "Instrumental"
+    }
+  ]
+}
