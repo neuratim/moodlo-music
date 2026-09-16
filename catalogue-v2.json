@@ -1,30 +1,923 @@
 {
+  "defaultSection": "motivation",
   "downloadBase": "https://raw.githubusercontent.com/neuratim/moodlo-music/main",
-  "generatedAt": "2026-09-15T20:38:50.812720Z",
-  "genres": [
-    "Acoustic",
-    "Ambient",
-    "Brass",
-    "Caribbean",
-    "Classical",
-    "Country",
-    "Electronic",
-    "Folk",
-    "Funk",
-    "Hip-hop",
-    "Jazz",
-    "Latin",
-    "Percussion",
-    "Pop",
-    "R&B",
-    "Rock",
-    "Soul",
-    "Vocal"
-  ],
+  "generatedAt": "2026-09-15T20:38:50.797205Z",
   "licence": "CC0 1.0 Universal (public domain). Composed for NeuraTiM with generative AI. No attribution required.",
-  "revision": 2,
-  "schema": 1,
+  "revision": 1,
+  "schema": 2,
+  "sections": [
+    {
+      "id": "motivation",
+      "localizations": {
+        "ar": "تحفيز",
+        "bn": "অনুপ্রেরণা",
+        "cs": "Motivace",
+        "de": "Motivation",
+        "en": "Motivation",
+        "es": "Motivación",
+        "fr": "Motivation",
+        "hi": "प्रेरणा",
+        "id": "Motivasi",
+        "it": "Motivazione",
+        "ja": "モチベーション",
+        "ko": "동기 부여",
+        "pl": "Motywacja",
+        "pt": "Motivação",
+        "ru": "Мотивация",
+        "tr": "Motivasyon",
+        "vi": "Động lực",
+        "zh": "激励"
+      }
+    },
+    {
+      "id": "library",
+      "localizations": {
+        "ar": "مكتبة المزاج",
+        "bn": "মুড লাইব্রেরি",
+        "cs": "Knihovna nálad",
+        "de": "Stimmungsbibliothek",
+        "en": "Mood library",
+        "es": "Biblioteca de ánimo",
+        "fr": "Bibliothèque d’humeurs",
+        "hi": "मूड लाइब्रेरी",
+        "id": "Pustaka suasana hati",
+        "it": "Libreria dell’umore",
+        "ja": "気分のライブラリー",
+        "ko": "기분 라이브러리",
+        "pl": "Biblioteka nastrojów",
+        "pt": "Biblioteca de humor",
+        "ru": "Библиотека настроений",
+        "tr": "Ruh hali kitaplığı",
+        "vi": "Thư viện tâm trạng",
+        "zh": "心情曲库"
+      }
+    }
+  ],
   "tracks": [
+    {
+      "id": "m001",
+      "lengthSeconds": 169,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "The Day Still Belongs to Me",
+      "versions": [
+        {
+          "bpm": 123,
+          "bytes": 3946125,
+          "energy": 4,
+          "id": "a",
+          "name": "The Day Still Belongs to Me",
+          "path": "tracks/m001/m001-a.mp3",
+          "seconds": 169,
+          "sha256": "a2247ef3e11d5ff927f23b1cb2be19015fddb431ae30a99d44a79aee0a469d64"
+        },
+        {
+          "bpm": 129,
+          "bytes": 3832797,
+          "energy": 4,
+          "id": "b",
+          "name": "The Day Still Belongs to Me",
+          "path": "tracks/m001/m001-b.mp3",
+          "seconds": 164,
+          "sha256": "02736d58f634505adb7c0f258e2c1c7001bbdc0607937fb0544523a6f4421059"
+        }
+      ]
+    },
+    {
+      "id": "m002",
+      "lengthSeconds": 160,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Buoyant Rise",
+      "versions": [
+        {
+          "bpm": 112,
+          "bytes": 3806205,
+          "energy": 3,
+          "id": "a",
+          "name": "Buoyant Rise",
+          "path": "tracks/m002/m002-a.mp3",
+          "seconds": 160,
+          "sha256": "ec792b9aabd9a656c3796b7aba2f9ed2cee982fb951b96221da51cae3c2a774b"
+        },
+        {
+          "bpm": 112,
+          "bytes": 3601173,
+          "energy": 3,
+          "id": "b",
+          "name": "Buoyant Rise",
+          "path": "tracks/m002/m002-b.mp3",
+          "seconds": 160,
+          "sha256": "db11b159ce6f2d70a6e6f393050e7e31f941eaa0558cae71812ac010b85c0682"
+        }
+      ]
+    },
+    {
+      "id": "m003",
+      "lengthSeconds": 174,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Growing Into",
+      "versions": [
+        {
+          "bpm": 118,
+          "bytes": 3990381,
+          "energy": 3,
+          "id": "a",
+          "name": "Growing Into",
+          "path": "tracks/m003/m003-a.mp3",
+          "seconds": 174,
+          "sha256": "b28aa4a607df5956edba8c19ea66b18cea561eddbd9f1882e7c975fb5d824549"
+        },
+        {
+          "bpm": 118,
+          "bytes": 3911325,
+          "energy": 3,
+          "id": "b",
+          "name": "Growing Into",
+          "path": "tracks/m003/m003-b.mp3",
+          "seconds": 174,
+          "sha256": "4e3422fe940e1f4f99af9d089b98f65073b6768332c9bb6b0b0f447ed4a0e547"
+        }
+      ]
+    },
+    {
+      "id": "m004",
+      "lengthSeconds": 165,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "That Counts",
+      "versions": [
+        {
+          "bpm": 130,
+          "bytes": 3816717,
+          "energy": 3,
+          "id": "a",
+          "name": "That Counts",
+          "path": "tracks/m004/m004-a.mp3",
+          "seconds": 165,
+          "sha256": "48be0e456e3cc90d1222463f9b7b32539abfa0e1bfd2516512ffbd0d211c3e45"
+        },
+        {
+          "bpm": 130,
+          "bytes": 3706077,
+          "energy": 4,
+          "id": "b",
+          "name": "That Counts",
+          "path": "tracks/m004/m004-b.mp3",
+          "seconds": 160,
+          "sha256": "3dd84bb6189b77dd5673e836ed8c4a2a931067a791cd9fd9bd32116d7ef0b33a"
+        }
+      ]
+    },
+    {
+      "id": "m005",
+      "lengthSeconds": 195,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Your Way, My Way",
+      "versions": [
+        {
+          "bpm": 120,
+          "bytes": 4469085,
+          "energy": 3,
+          "id": "a",
+          "name": "Your Way, My Way",
+          "path": "tracks/m005/m005-a.mp3",
+          "seconds": 195,
+          "sha256": "2f3ac13a76ebe8e40fa912988043e919e20707e22ac52ec2a0f74378344ab9c2"
+        },
+        {
+          "bpm": 118,
+          "bytes": 4514829,
+          "energy": 3,
+          "id": "b",
+          "name": "Your Way, My Way",
+          "path": "tracks/m005/m005-b.mp3",
+          "seconds": 195,
+          "sha256": "f846910feddccf358994a3306aed32d6202bf5012c454353cdbf41669f5f8ea8"
+        }
+      ]
+    },
+    {
+      "id": "m006",
+      "lengthSeconds": 170,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Open Skyline",
+      "versions": [
+        {
+          "bpm": 130,
+          "bytes": 3987165,
+          "energy": 4,
+          "id": "a",
+          "name": "Open Skyline",
+          "path": "tracks/m006/m006-a.mp3",
+          "seconds": 170,
+          "sha256": "5da3891ddc0b3f71c04e653f09d69e50bf942a3e10aafec33168daba20dff22e"
+        },
+        {
+          "bpm": 132,
+          "bytes": 4061325,
+          "energy": 4,
+          "id": "b",
+          "name": "Fresh Air Momentum",
+          "path": "tracks/m006/m006-b.mp3",
+          "seconds": 175,
+          "sha256": "365ec94dc2cac82a14c462054964d2d263ebc7971aaa1d62d4166addd4418822"
+        }
+      ]
+    },
+    {
+      "id": "m007",
+      "lengthSeconds": 180,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Bright Bounce",
+      "versions": [
+        {
+          "bpm": 132,
+          "bytes": 4369773,
+          "energy": 3,
+          "id": "a",
+          "name": "Bright Bounce",
+          "path": "tracks/m007/m007-a.mp3",
+          "seconds": 180,
+          "sha256": "ce723bb329cf8e03813603ef3cdd335859e74fe03f260c602e6118fe14e0fbf3"
+        },
+        {
+          "bpm": 130,
+          "bytes": 4264029,
+          "energy": 3,
+          "id": "b",
+          "name": "Bright Bounce",
+          "path": "tracks/m007/m007-b.mp3",
+          "seconds": 180,
+          "sha256": "d1004503a526ee5a2cc053a693c95763607b7f16961e8aab6a19513bf4fb54dd"
+        }
+      ]
+    },
+    {
+      "id": "m008",
+      "lengthSeconds": 180,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "You Called, I Came",
+      "versions": [
+        {
+          "bpm": 123,
+          "bytes": 4221933,
+          "energy": 4,
+          "id": "a",
+          "name": "You Called, I Came",
+          "path": "tracks/m008/m008-a.mp3",
+          "seconds": 180,
+          "sha256": "5e35eed09b0b599fad2c7e7a3b350124c3b0f91b98b12baa4e937ec26f6687b5"
+        },
+        {
+          "bpm": 120,
+          "bytes": 4248045,
+          "energy": 4,
+          "id": "b",
+          "name": "You Called, I Came",
+          "path": "tracks/m008/m008-b.mp3",
+          "seconds": 180,
+          "sha256": "7c89f69fa1d50f0d13091a6af7a984b334ae46e8ab348a9a568001e6b9d67265"
+        }
+      ]
+    },
+    {
+      "id": "m009",
+      "lengthSeconds": 180,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Worth the Walk",
+      "versions": [
+        {
+          "bpm": 112,
+          "bytes": 4182189,
+          "energy": 4,
+          "id": "a",
+          "name": "Worth the Walk",
+          "path": "tracks/m009/m009-a.mp3",
+          "seconds": 180,
+          "sha256": "59775c09ceac88d83c4dbe66da724fa37650d2c3f69e3783a27bf30b40eb45bb"
+        },
+        {
+          "bpm": 112,
+          "bytes": 4220541,
+          "energy": 4,
+          "id": "b",
+          "name": "Worth the Walk",
+          "path": "tracks/m009/m009-b.mp3",
+          "seconds": 179,
+          "sha256": "6a6f17963c8bffe3184d2d4346a09625a236f98afbcb07fedd20fd40e2e7f70e"
+        }
+      ]
+    },
+    {
+      "id": "m010",
+      "lengthSeconds": 190,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "This City Never Asked",
+      "versions": [
+        {
+          "bpm": 130,
+          "bytes": 4249197,
+          "energy": 4,
+          "id": "a",
+          "name": "This City Never Asked",
+          "path": "tracks/m010/m010-a.mp3",
+          "seconds": 190,
+          "sha256": "e111dd3f6effb1a10cb5dc4a995f1c484537ed8d6764cdbb28afa9f273566940"
+        },
+        {
+          "bpm": 132,
+          "bytes": 4348173,
+          "energy": 4,
+          "id": "b",
+          "name": "This City Never Asked",
+          "path": "tracks/m010/m010-b.mp3",
+          "seconds": 190,
+          "sha256": "3562479662ccda0a983926e7ccab829729b221653bc685fe6ae3ae0199fdd8ad"
+        }
+      ]
+    },
+    {
+      "id": "m011",
+      "lengthSeconds": 199,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Rising Light",
+      "versions": [
+        {
+          "bpm": 129,
+          "bytes": 4661709,
+          "energy": 3,
+          "id": "a",
+          "name": "Rising Light",
+          "path": "tracks/m011/m011-a.mp3",
+          "seconds": 199,
+          "sha256": "d868a6f21875a5212d3b2d375a63a19bcc8f64613092a949857835e2cecf5b69"
+        },
+        {
+          "bpm": 129,
+          "bytes": 4582509,
+          "energy": 3,
+          "id": "b",
+          "name": "Rising Light",
+          "path": "tracks/m011/m011-b.mp3",
+          "seconds": 199,
+          "sha256": "f5b1d95942cbdc587b382981e448b77a7aaa8d98cbc7de336d5e21dc7c4252de"
+        }
+      ]
+    },
+    {
+      "id": "m012",
+      "lengthSeconds": 200,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Somebody Waved Me In",
+      "versions": [
+        {
+          "bpm": 120,
+          "bytes": 4489821,
+          "energy": 3,
+          "id": "a",
+          "name": "Somebody Waved Me In",
+          "path": "tracks/m012/m012-a.mp3",
+          "seconds": 200,
+          "sha256": "ec4236c4c42ffa9d24a05bdb028b1c71a2c0adf39025abf0cb9fc2bbe293bd1d"
+        },
+        {
+          "bpm": 120,
+          "bytes": 4508205,
+          "energy": 4,
+          "id": "b",
+          "name": "Somebody Waved Me In",
+          "path": "tracks/m012/m012-b.mp3",
+          "seconds": 200,
+          "sha256": "9a6bd5c070f5f0d3569a8055fbd5c367b5fb62d131ab9decfb1cee9d8eb44cdf"
+        }
+      ]
+    },
+    {
+      "id": "m013",
+      "lengthSeconds": 170,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Saved Me a Place",
+      "versions": [
+        {
+          "bpm": 112,
+          "bytes": 3800109,
+          "energy": 4,
+          "id": "a",
+          "name": "Saved Me a Place",
+          "path": "tracks/m013/m013-a.mp3",
+          "seconds": 170,
+          "sha256": "913ea6dff08454fe1134c10cede0d5d507cc457d0c5a54eecbca9d88d45963ec"
+        },
+        {
+          "bpm": 112,
+          "bytes": 3841413,
+          "energy": 4,
+          "id": "b",
+          "name": "Saved Me a Place",
+          "path": "tracks/m013/m013-b.mp3",
+          "seconds": 169,
+          "sha256": "8a306a406d895ddba551062359cbcbc3a08b8b70a2e41f0e6ebbb0657bee1eaf"
+        }
+      ]
+    },
+    {
+      "id": "m014",
+      "lengthSeconds": 185,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Windows Opening",
+      "versions": [
+        {
+          "bpm": 120,
+          "bytes": 4277421,
+          "energy": 3,
+          "id": "a",
+          "name": "Windows Opening",
+          "path": "tracks/m014/m014-a.mp3",
+          "seconds": 185,
+          "sha256": "0b473f92dccf3005d529167e5966f4fdc2c757fc264321ba361ea08e5d8ed4db"
+        },
+        {
+          "bpm": 123,
+          "bytes": 4268397,
+          "energy": 3,
+          "id": "b",
+          "name": "Windows Opening",
+          "path": "tracks/m014/m014-b.mp3",
+          "seconds": 185,
+          "sha256": "45ce4008b8574f5596b54f13094addbf621e044b37acc7c186ad7028a525d12d"
+        }
+      ]
+    },
+    {
+      "id": "m015",
+      "lengthSeconds": 185,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Bright G-Major Joy",
+      "versions": [
+        {
+          "bpm": 130,
+          "bytes": 4492749,
+          "energy": 4,
+          "id": "a",
+          "name": "Bright G-Major Joy",
+          "path": "tracks/m015/m015-a.mp3",
+          "seconds": 185,
+          "sha256": "3170976d31a97e71f9333826c0c7368623482abcf16a803a9b1f0af0580b36bf"
+        },
+        {
+          "bpm": 132,
+          "bytes": 4311237,
+          "energy": 4,
+          "id": "b",
+          "name": "Bright G-Major Joy",
+          "path": "tracks/m015/m015-b.mp3",
+          "seconds": 184,
+          "sha256": "806c893fa9088e2a7c44e2d7d5446defed3a1d04432e12e51d24d28e5383be34"
+        }
+      ]
+    },
+    {
+      "id": "m016",
+      "lengthSeconds": 166,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Sunlit Urban Motion",
+      "versions": [
+        {
+          "bpm": 126,
+          "bytes": 3943053,
+          "energy": 4,
+          "id": "a",
+          "name": "Sunlit Urban Motion",
+          "path": "tracks/m016/m016-a.mp3",
+          "seconds": 166,
+          "sha256": "1cc12f54c21506ae8ef5408549fdf6cf499898335fe5d29cb257646c43469fe5"
+        },
+        {
+          "bpm": 130,
+          "bytes": 3812925,
+          "energy": 4,
+          "id": "b",
+          "name": "Sunlit Urban Motion",
+          "path": "tracks/m016/m016-b.mp3",
+          "seconds": 165,
+          "sha256": "26992b9b0c4a5e36fa9c4e58497c4ef24158e32d692a582f1ce9a3f60809b647"
+        }
+      ]
+    },
+    {
+      "id": "m017",
+      "lengthSeconds": 177,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Round the Corner",
+      "versions": [
+        {
+          "bpm": 130,
+          "bytes": 4150701,
+          "energy": 4,
+          "id": "a",
+          "name": "Round the Corner",
+          "path": "tracks/m017/m017-a.mp3",
+          "seconds": 177,
+          "sha256": "9da201f6fbdfba56734f0496080e7070db609bc87c913be193d5daf7fbb43467"
+        },
+        {
+          "bpm": 129,
+          "bytes": 3778605,
+          "energy": 3,
+          "id": "b",
+          "name": "The Day Said More",
+          "path": "tracks/m017/m017-b.mp3",
+          "seconds": 165,
+          "sha256": "77034adfe787f19d6afc92294d42ac2296599e793b78a035372668b4eb70b305"
+        }
+      ]
+    },
+    {
+      "id": "m018",
+      "lengthSeconds": 189,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Who Is Here",
+      "versions": [
+        {
+          "bpm": 129,
+          "bytes": 4326957,
+          "energy": 3,
+          "id": "a",
+          "name": "Who Is Here",
+          "path": "tracks/m018/m018-a.mp3",
+          "seconds": 189,
+          "sha256": "b26ae91d18c957be1e8273e1fccd621eaa169cb8d19148d45a51dda3cc52c465"
+        },
+        {
+          "bpm": 129,
+          "bytes": 4306917,
+          "energy": 3,
+          "id": "b",
+          "name": "Who Is Here",
+          "path": "tracks/m018/m018-b.mp3",
+          "seconds": 190,
+          "sha256": "b14265b81e9954ec88a80cecbab8423c66438575087b4d6a91b6d33563ec3f18"
+        }
+      ]
+    },
+    {
+      "id": "m019",
+      "lengthSeconds": 205,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "The Room began to glow",
+      "versions": [
+        {
+          "bpm": 118,
+          "bytes": 4697901,
+          "energy": 3,
+          "id": "a",
+          "name": "The Room began to glow",
+          "path": "tracks/m019/m019-a.mp3",
+          "seconds": 205,
+          "sha256": "2aa04146bdc81720be9cc382df46a56cee119198892d0c934e6a19d27cf91b3a"
+        },
+        {
+          "bpm": 118,
+          "bytes": 4824717,
+          "energy": 3,
+          "id": "b",
+          "name": "Saved a Place",
+          "path": "tracks/m019/m019-b.mp3",
+          "seconds": 204,
+          "sha256": "76658c25985577c5da102277b29b605eb8d9efc71a4bd46881db031d6fbb16d0"
+        }
+      ]
+    },
+    {
+      "id": "m020",
+      "lengthSeconds": 190,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Buoyant Groove",
+      "versions": [
+        {
+          "bpm": 129,
+          "bytes": 4409757,
+          "energy": 3,
+          "id": "a",
+          "name": "Buoyant Groove",
+          "path": "tracks/m020/m020-a.mp3",
+          "seconds": 190,
+          "sha256": "a44d60db93cc59709d9c872db84bc430a1d5c6242880df76653569c896502212"
+        },
+        {
+          "bpm": 126,
+          "bytes": 4570365,
+          "energy": 3,
+          "id": "b",
+          "name": "Buoyant Groove",
+          "path": "tracks/m020/m020-b.mp3",
+          "seconds": 190,
+          "sha256": "f7a8f7fcc3d3d1e2f76d4170dddc5be89a38989534f6929288fdb5abc922be60"
+        }
+      ]
+    },
+    {
+      "id": "m021",
+      "lengthSeconds": 217,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Let the Good Day Catch You",
+      "versions": [
+        {
+          "bpm": 130,
+          "bytes": 5049765,
+          "energy": 4,
+          "id": "a",
+          "name": "Let the Good Day Catch You",
+          "path": "tracks/m021/m021-a.mp3",
+          "seconds": 217,
+          "sha256": "22857a323413efc01e33483ad09828e5e843d7517bf45f098f3e4785f7c2ede1"
+        },
+        {
+          "bpm": 136,
+          "bytes": 4077741,
+          "energy": 4,
+          "id": "b",
+          "name": "Let the Good Day Catch You",
+          "path": "tracks/m021/m021-b.mp3",
+          "seconds": 180,
+          "sha256": "cef080437df0d03cb68340c1e6dbc6dc81253152268f266e12edc7c4c602eef3"
+        }
+      ]
+    },
+    {
+      "id": "m022",
+      "lengthSeconds": 210,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Somewhere I Can Go Today",
+      "versions": [
+        {
+          "bpm": 129,
+          "bytes": 5004813,
+          "energy": 4,
+          "id": "a",
+          "name": "Somewhere I Can Go Today",
+          "path": "tracks/m022/m022-a.mp3",
+          "seconds": 210,
+          "sha256": "aef90aef703581601584e2a5c20ed30d9ffa3d2e7ce83daf168761988c4ac329"
+        },
+        {
+          "bpm": 126,
+          "bytes": 4835469,
+          "energy": 4,
+          "id": "b",
+          "name": "Arriving Under My Own Steam",
+          "path": "tracks/m022/m022-b.mp3",
+          "seconds": 210,
+          "sha256": "56461a0b909e962c2843986ad4a2935f7da6385c7072b5f0b99a11d1586f8265"
+        }
+      ]
+    },
+    {
+      "id": "m023",
+      "lengthSeconds": 175,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Forward Motion",
+      "versions": [
+        {
+          "bpm": 118,
+          "bytes": 4023021,
+          "energy": 3,
+          "id": "a",
+          "name": "Forward Motion",
+          "path": "tracks/m023/m023-a.mp3",
+          "seconds": 175,
+          "sha256": "8243171c722b388b2b2f15e2cd13ce458941c5476e665bef864b82c719f5f2f8"
+        },
+        {
+          "bpm": 118,
+          "bytes": 4074549,
+          "energy": 3,
+          "id": "b",
+          "name": "Buant Melody",
+          "path": "tracks/m023/m023-b.mp3",
+          "seconds": 175,
+          "sha256": "b37396495e1ebd33a3a2fb998bcf3c62358a852e6905128e323254dfaf9872fd"
+        }
+      ]
+    },
+    {
+      "id": "m024",
+      "lengthSeconds": 189,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "A Little Room to Give",
+      "versions": [
+        {
+          "bpm": 129,
+          "bytes": 4332429,
+          "energy": 4,
+          "id": "a",
+          "name": "A Little Room to Give",
+          "path": "tracks/m024/m024-a.mp3",
+          "seconds": 189,
+          "sha256": "bd427142299d6d6783dec8c62eefed3af425da16cdb0b56481127d8423ef1b20"
+        },
+        {
+          "bpm": 126,
+          "bytes": 4258173,
+          "energy": 3,
+          "id": "b",
+          "name": "A Little Room to Give",
+          "path": "tracks/m024/m024-b.mp3",
+          "seconds": 190,
+          "sha256": "6a7223fe5c5d893c3237400adbd6e18eb9dd297692f2f1e72743d1b619ca318e"
+        }
+      ]
+    },
+    {
+      "id": "m025",
+      "lengthSeconds": 175,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "There I Was",
+      "versions": [
+        {
+          "bpm": 123,
+          "bytes": 3993477,
+          "energy": 3,
+          "id": "a",
+          "name": "There I Was",
+          "path": "tracks/m025/m025-a.mp3",
+          "seconds": 175,
+          "sha256": "a0240c9db1bff04378abcb678484bbea1792a28acea3fd5417c9b5b200af245f"
+        },
+        {
+          "bpm": 120,
+          "bytes": 4057389,
+          "energy": 3,
+          "id": "b",
+          "name": "Pavement Groove",
+          "path": "tracks/m025/m025-b.mp3",
+          "seconds": 174,
+          "sha256": "821906ffda56cc9eaaac7d92c6f7dae5738c7b00bedcdc06e7ddf31ed0e79bd7"
+        }
+      ]
+    },
+    {
+      "id": "m101",
+      "lengthSeconds": 223,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Open the Day",
+      "versions": [
+        {
+          "bpm": 129,
+          "bytes": 5077293,
+          "energy": 4,
+          "id": "a",
+          "name": "Open the Day",
+          "path": "tracks/m101/m101-a.mp3",
+          "seconds": 223,
+          "sha256": "827018228db4e45807481098ccc8806ccc645e2f70a74801648c9ecc2fab9363"
+        },
+        {
+          "bpm": 129,
+          "bytes": 4356237,
+          "energy": 3,
+          "id": "b",
+          "name": "Open the Day Begins",
+          "path": "tracks/m101/m101-b.mp3",
+          "seconds": 194,
+          "sha256": "ac5ed800516f45aeb989515b3f6a59e812606be51cab68fe71eb0e7c09fd09b7"
+        }
+      ]
+    },
+    {
+      "id": "m102",
+      "lengthSeconds": 170,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Sunlit Strut",
+      "versions": [
+        {
+          "bpm": 104,
+          "bytes": 4305069,
+          "energy": 4,
+          "id": "a",
+          "name": "Sunlit Strut",
+          "path": "tracks/m102/m102-a.mp3",
+          "seconds": 170,
+          "sha256": "1f346742182ae29f20fd0e7ae577f8e6b274fe5d104d194db2ba2ea148fe3b32"
+        },
+        {
+          "bpm": 101,
+          "bytes": 4353309,
+          "energy": 4,
+          "id": "b",
+          "name": "Sunlit Strut",
+          "path": "tracks/m102/m102-b.mp3",
+          "seconds": 170,
+          "sha256": "48ee11a5b1f6eaf5e9f80b2a300c50c55b60645f95fb1510d3feb62923ab57a7"
+        }
+      ]
+    },
     {
       "age": "0-3",
       "bpm": 72,
@@ -40,6 +933,7 @@
         "comfort",
         "wonder"
       ],
+      "section": "library",
       "style": "ambient acoustic lullaby",
       "title": "Pocket Sunrise",
       "use": "quiet play",
@@ -78,6 +972,7 @@
         "gentleness",
         "delight"
       ],
+      "section": "library",
       "style": "miniature chamber waltz",
       "title": "Cloud Carousel",
       "use": "caregiver cuddle",
@@ -116,6 +1011,7 @@
         "playfulness",
         "affection"
       ],
+      "section": "library",
       "style": "soft toybox swing",
       "title": "Peach Socks",
       "use": "gentle movement",
@@ -154,6 +1050,7 @@
         "calm",
         "curiosity"
       ],
+      "section": "library",
       "style": "soft ambient electronica",
       "title": "Little Window Rain",
       "use": "quiet looking",
@@ -192,6 +1089,7 @@
         "warmth",
         "reassurance"
       ],
+      "section": "library",
       "style": "harp and humming miniature",
       "title": "Hummingbird Quilt",
       "use": "family wind-down",
@@ -230,6 +1128,7 @@
         "delight",
         "gentle energy"
       ],
+      "section": "library",
       "style": "wooden miniature groove",
       "title": "Round Pebble Parade",
       "use": "supervised play",
@@ -268,6 +1167,7 @@
         "serenity",
         "wonder"
       ],
+      "section": "library",
       "style": "music-box cloudscape",
       "title": "Lantern Float",
       "use": "quiet evening",
@@ -306,6 +1206,7 @@
         "welcome",
         "affection"
       ],
+      "section": "library",
       "style": "gentle acoustic greeting song",
       "title": "Hello Tiny Day",
       "use": "morning together",
@@ -344,6 +1245,7 @@
         "ease",
         "playfulness"
       ],
+      "section": "library",
       "style": "felt-piano chamber miniature",
       "title": "Paper Boat Waltz",
       "use": "quiet craft company",
@@ -382,6 +1284,7 @@
         "comfort",
         "discovery"
       ],
+      "section": "library",
       "style": "rounded downtempo dream-pop",
       "title": "Velvet Planet",
       "use": "gentle sensory play",
@@ -420,6 +1323,7 @@
         "playfulness",
         "confidence"
       ],
+      "section": "library",
       "style": "playful acoustic ska",
       "title": "Strawberry Sneakers",
       "use": "family dance",
@@ -458,6 +1362,7 @@
         "silliness",
         "friendship"
       ],
+      "section": "library",
       "style": "whimsical jug-band folk",
       "title": "Dinosaur Picnic",
       "use": "singalong play",
@@ -496,6 +1401,7 @@
         "wonder",
         "optimism"
       ],
+      "section": "library",
       "style": "playful toy-orchestra waltz",
       "title": "Sidewalk Star Map",
       "use": "drawing and crafts",
@@ -534,6 +1440,7 @@
         "playfulness",
         "connection"
       ],
+      "section": "library",
       "style": "gentle a cappella counting groove",
       "title": "Bubble Count",
       "use": "group singalong",
@@ -572,6 +1479,7 @@
         "curiosity",
         "delight"
       ],
+      "section": "library",
       "style": "pizzicato discovery march",
       "title": "Garden Detective",
       "use": "puzzle play",
@@ -610,6 +1518,7 @@
         "cheerfulness",
         "togetherness"
       ],
+      "section": "library",
       "style": "family kitchen swing",
       "title": "Pancake Parade",
       "use": "weekend breakfast",
@@ -648,6 +1557,7 @@
         "silliness",
         "energy"
       ],
+      "section": "library",
       "style": "soft electro-swing cartoon groove",
       "title": "Jellybean Weather",
       "use": "playroom dance",
@@ -686,6 +1596,7 @@
         "belonging",
         "hope"
       ],
+      "section": "library",
       "style": "bright cooperative folk-pop",
       "title": "Kindness Kite",
       "use": "family singalong",
@@ -724,6 +1635,7 @@
         "confidence",
         "excitement"
       ],
+      "section": "library",
       "style": "bright clean pop-punk",
       "title": "Skatepark Sunshine",
       "use": "active play",
@@ -762,6 +1674,7 @@
         "ease",
         "curiosity"
       ],
+      "section": "library",
       "style": "sunny lo-fi instrumental",
       "title": "Secret Treehouse",
       "use": "drawing or homework",
@@ -800,6 +1713,7 @@
         "discovery",
         "achievement"
       ],
+      "section": "library",
       "style": "bright melodic chiptune",
       "title": "Puzzle Power",
       "use": "puzzles and building",
@@ -838,6 +1752,7 @@
         "belonging",
         "confidence"
       ],
+      "section": "library",
       "style": "inclusive youth-friendly funk-pop",
       "title": "Team High Five",
       "use": "group activity",
@@ -876,6 +1791,7 @@
         "wonder",
         "cheerfulness"
       ],
+      "section": "library",
       "style": "cosmic nu-disco instrumental",
       "title": "Planetarium Picnic",
       "use": "creative projects",
@@ -914,6 +1830,7 @@
         "freedom",
         "energy"
       ],
+      "section": "library",
       "style": "sunny melodic surf-rock",
       "title": "Ocean Postcard",
       "use": "outdoor play",
@@ -952,6 +1869,7 @@
         "curiosity",
         "hope"
       ],
+      "section": "library",
       "style": "bright orchestral storybook",
       "title": "Library Adventure",
       "use": "reading break",
@@ -990,6 +1908,7 @@
         "imagination",
         "confidence"
       ],
+      "section": "library",
       "style": "playful clean space-rap",
       "title": "Sneakers on Saturn",
       "use": "creative movement",
@@ -1028,6 +1947,7 @@
         "creativity",
         "optimism"
       ],
+      "section": "library",
       "style": "colorful indie art-pop",
       "title": "Paint the Afternoon",
       "use": "arts and crafts",
@@ -1066,6 +1986,7 @@
         "curiosity",
         "momentum"
       ],
+      "section": "library",
       "style": "playful jazz-fusion workshop",
       "title": "Weekend Inventors",
       "use": "building projects",

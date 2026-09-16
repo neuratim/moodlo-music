@@ -1,0 +1,63 @@
+{
+  "defaultSection": "motivation",
+  "schema": 1,
+  "sections": [
+    {
+      "id": "motivation",
+      "intake": "unprocessed/zoo",
+      "localizations": {
+        "ar": "تحفيز",
+        "bn": "অনুপ্রেরণা",
+        "cs": "Motivace",
+        "de": "Motivation",
+        "en": "Motivation",
+        "es": "Motivación",
+        "fr": "Motivation",
+        "hi": "प्रेरणा",
+        "id": "Motivasi",
+        "it": "Motivazione",
+        "ja": "モチベーション",
+        "ko": "동기 부여",
+        "pl": "Motywacja",
+        "pt": "Motivação",
+        "ru": "Мотивация",
+        "tr": "Motivasyon",
+        "vi": "Động lực",
+        "zh": "激励"
+      },
+      "metadata": "measured",
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "prefix": "m"
+    },
+    {
+      "id": "library",
+      "intake": "unprocessed",
+      "localizations": {
+        "ar": "مكتبة المزاج",
+        "bn": "মুড লাইব্রেরি",
+        "cs": "Knihovna nálad",
+        "de": "Stimmungsbibliothek",
+        "en": "Mood library",
+        "es": "Biblioteca de ánimo",
+        "fr": "Bibliothèque d’humeurs",
+        "hi": "मूड लाइब्रेरी",
+        "id": "Pustaka suasana hati",
+        "it": "Libreria dell’umore",
+        "ja": "気分のライブラリー",
+        "ko": "기분 라이브러리",
+        "pl": "Biblioteka nastrojów",
+        "pt": "Biblioteca de humor",
+        "ru": "Библиотека настроений",
+        "tr": "Ruh hali kitaplığı",
+        "vi": "Thư viện tâm trạng",
+        "zh": "心情曲库"
+      },
+      "metadata": "prompts",
+      "prefix": "",
+      "source": "100_mood_music_prompts.md"
+    }
+  ]
+}
