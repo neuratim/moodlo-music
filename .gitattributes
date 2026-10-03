@@ -1,0 +1,42 @@
+# Line endings: the same bytes on Windows, macOS, Linux and CI.
+#
+# Git for Windows installs core.autocrlf=true, so without this file a Windows
+# checkout rewrites every LF as CRLF while macOS and CI keep LF. Prettier's check
+# then fails on Windows alone, dart format writes different bytes per machine and
+# byte-for-byte generated-file checks disagree. Text is LF in the repository and
+# in every working tree; `npm run eol` converts a checkout made before this.
+* text=auto eol=lf
+
+# cmd.exe misreads labels and GOTO targets in a batch file with LF endings.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Never converted, whatever their first bytes happen to look like.
+*.avif binary
+*.gif binary
+*.icns binary
+*.ico binary
+*.jar binary
+*.jks binary
+*.jpeg binary
+*.jpg binary
+*.keystore binary
+*.m4a binary
+*.mov binary
+*.mp3 binary
+*.mp4 binary
+*.ogg binary
+*.onnx binary
+*.otf binary
+*.p12 binary
+*.pdf binary
+*.png binary
+*.pyc binary
+*.ttf binary
+*.wasm binary
+*.wav binary
+*.webm binary
+*.webp binary
+*.woff binary
+*.woff2 binary
+*.zip binary
