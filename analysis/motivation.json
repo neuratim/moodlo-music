@@ -192,15 +192,15 @@
     },
     "m008-a": {
       "bpm": 123,
-      "centroidHz": 2533.7,
+      "centroidHz": 2513.0,
       "energy": 4,
       "file": "008-You Called, I Came.mp3",
       "key": null,
-      "keyConfidence": 0.952,
+      "keyConfidence": 0.95,
       "keyEstimate": "D minor",
-      "loudnessDb": -16.16,
-      "onsetStrength": 0.06682,
-      "onsetsPerSecond": 3.702,
+      "loudnessDb": -16.2,
+      "onsetStrength": 0.06715,
+      "onsetsPerSecond": 3.707,
       "seconds": 179.65
     },
     "m008-b": {
@@ -218,15 +218,15 @@
     },
     "m009-a": {
       "bpm": 112,
-      "centroidHz": 2723.6,
+      "centroidHz": 2707.4,
       "energy": 4,
       "file": "009-Worth the Walk.mp3",
       "key": null,
-      "keyConfidence": 0.891,
+      "keyConfidence": 0.892,
       "keyEstimate": "Bb major",
       "loudnessDb": -17.3,
-      "onsetStrength": 0.04901,
-      "onsetsPerSecond": 3.311,
+      "onsetStrength": 0.04913,
+      "onsetsPerSecond": 3.289,
       "seconds": 180.01
     },
     "m009-b": {
@@ -595,15 +595,15 @@
     },
     "m023-b": {
       "bpm": 118,
-      "centroidHz": 2018.8,
+      "centroidHz": 2003.8,
       "energy": 3,
       "file": "023b-Buant Melody.mp3",
       "key": null,
-      "keyConfidence": 0.791,
+      "keyConfidence": 0.793,
       "keyEstimate": "B minor",
-      "loudnessDb": -16.17,
-      "onsetStrength": 0.03911,
-      "onsetsPerSecond": 3.209,
+      "loudnessDb": -16.18,
+      "onsetStrength": 0.03939,
+      "onsetsPerSecond": 3.197,
       "seconds": 174.83
     },
     "m024-a": {
