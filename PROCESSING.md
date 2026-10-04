@@ -93,3 +93,17 @@ Compatibility with schema 1 is REMOVED BY USER. Playback, network, localization,
 and UI behavior are unchanged; no migrations or new dependencies are involved.
 The earlier imports and ending corrections still await their required listening
 review and are kept separate from this catalogue cleanup's local commits.
+
+## Analysis report cleanup: 2026-10-04
+
+At the user's request, removed the seven temporary ending-scan reports, fade
+logs, and target list. The final ending scan passed for all 248 renders after
+seven fade corrections; those results remain summarized in the processing record.
+`analysis/motivation.json` is retained because the catalogue generator reads
+its per-render measurements; it is a production input rather than a temporary
+report. No music, catalogue, or measurement data was changed by this cleanup.
+
+| Requirement | Verification                                                                               | Status   |
+| ----------- | ------------------------------------------------------------------------------------------ | -------- |
+| CLEAN-01    | All seven temporary reports are absent; their obsolete documentation links were removed.   | VERIFIED |
+| CLEAN-02    | Required measurement input and both remaining catalogue files retain their SHA-256 hashes. | VERIFIED |
