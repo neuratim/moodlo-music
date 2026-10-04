@@ -1,9 +1,9 @@
 {
   "defaultSection": "motivation",
   "downloadBase": "https://raw.githubusercontent.com/neuratim/moodlo-music/main",
-  "generatedAt": "2026-09-15T20:38:50.797205Z",
+  "generatedAt": "2026-10-04T20:35:46.150920Z",
   "licence": "CC0 1.0 Universal (public domain). Composed for NeuraTiM with generative AI. No attribution required.",
-  "revision": 1,
+  "revision": 2,
   "schema": 2,
   "sections": [
     {
@@ -56,7 +56,7 @@
   "tracks": [
     {
       "id": "m001",
-      "lengthSeconds": 169,
+      "lengthSeconds": 195,
       "moods": [
         "joy",
         "optimism"
@@ -65,14 +65,14 @@
       "title": "The Day Still Belongs to Me",
       "versions": [
         {
-          "bpm": 123,
-          "bytes": 3946125,
+          "bpm": 126,
+          "bytes": 4446192,
           "energy": 4,
           "id": "a",
           "name": "The Day Still Belongs to Me",
           "path": "tracks/m001/m001-a.mp3",
-          "seconds": 169,
-          "sha256": "a2247ef3e11d5ff927f23b1cb2be19015fddb431ae30a99d44a79aee0a469d64"
+          "seconds": 195,
+          "sha256": "0f5d2bac4b0a296ff6cd52445accdf206247eba550bc91f283af56c306650ee1"
         },
         {
           "bpm": 129,

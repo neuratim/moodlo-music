@@ -1,25 +1,25 @@
 {
   "calibration": {
-    "energyExact": 21,
-    "energyWithinOne": 30,
-    "keyExact": 15,
-    "tempoWithinTenPercent": 25,
-    "tracks": 30
+    "energyExact": 66,
+    "energyWithinOne": 97,
+    "keyExact": 38,
+    "tempoWithinTenPercent": 87,
+    "tracks": 97
   },
   "publishKeys": false,
   "renders": {
     "m001-a": {
-      "bpm": 123,
-      "centroidHz": 2963.2,
+      "bpm": 126,
+      "centroidHz": 3251.0,
       "energy": 4,
       "file": "001-The Day Still Belongs to Me.mp3",
       "key": null,
-      "keyConfidence": 0.644,
+      "keyConfidence": 0.691,
       "keyEstimate": "B minor",
-      "loudnessDb": -17.41,
-      "onsetStrength": 0.03917,
-      "onsetsPerSecond": 3.73,
-      "seconds": 169.19
+      "loudnessDb": -18.06,
+      "onsetStrength": 0.03609,
+      "onsetsPerSecond": 3.584,
+      "seconds": 194.73
     },
     "m001-b": {
       "bpm": 129,

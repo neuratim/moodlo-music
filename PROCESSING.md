@@ -107,3 +107,18 @@ report. No music, catalogue, or measurement data was changed by this cleanup.
 | ----------- | ------------------------------------------------------------------------------------------ | -------- |
 | CLEAN-01    | All seven temporary reports are absent; their obsolete documentation links were removed.   | VERIFIED |
 | CLEAN-02    | Required measurement input and both remaining catalogue files retain their SHA-256 hashes. | VERIFIED |
+
+## Updated Motivation render: 2026-10-04
+
+At the user's confirmation, refreshed the values for the user-supplied
+`tracks/m001/m001-a.mp3`. The render is 195 seconds, 126 BPM, energy 4/4,
+and 4,446,192 bytes. Its SHA-256 is
+`0f5d2bac4b0a296ff6cd52445accdf206247eba550bc91f283af56c306650ee1`.
+The composition length follows version A and is now 195 seconds.
+
+- M001-01 VERIFIED: remeasured A using the existing audio-analysis tool and
+  unchanged calibration against 97 library renders; refreshed its measurement
+  input and regenerated its catalogue entry with the existing Dart tool.
+- M001-02 VERIFIED: B and the other 123 working catalogue entries are unchanged;
+  all 248 audio hashes are unchanged; a repeated generator run keeps the same
+  records and revision. Unrelated intake and staged work are preserved.
