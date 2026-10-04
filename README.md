@@ -13,6 +13,11 @@ The shelf is divided into sections, listed in `sections.json`:
   `100_mood_music_prompts.md`, which carries their complete filter metadata.
 
 The library ends at 100; every other section numbers on without limit under its
-own prefix. `catalogue-v2.json` is what the app reads; `catalogue.json` keeps the
-library alone in the schema earlier app builds understand. See `PROCESSING.md`
-for the repeatable intake procedure. Published files are CC0 1.0 Universal.
+own prefix. `catalogue-v2.json` is the single playable catalogue the app reads.
+`prompt_catalogue.json` indexes the 100 written assignments, including music
+that is not available yet. See `PROCESSING.md` for the repeatable intake
+procedure. Published files are CC0 1.0 Universal.
+
+After `dart pub get`, run `python -B -m unittest discover -s tool -p 'test_*.py' -v`
+to verify catalogue generation in isolated fixtures. Dart, Python, and FFmpeg
+must be available on PATH.

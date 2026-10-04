@@ -7,10 +7,10 @@ section's from the audio.
 
 ## Sections
 
-| Section | Intake folder | Ids | Facts come from |
-| --- | --- | --- | --- |
-| `motivation` | `unprocessed/zoo/` | `m` + the file number (`m001`, `m101`) | `tool/analyze_audio.py` |
-| `library` | `unprocessed/` (files directly in it) | the prompt number, `001`–`100` | `100_mood_music_prompts.md` |
+| Section      | Intake folder                         | Ids                                    | Facts come from             |
+| ------------ | ------------------------------------- | -------------------------------------- | --------------------------- |
+| `motivation` | `unprocessed/zoo/`                    | `m` + the file number (`m001`, `m101`) | `tool/analyze_audio.py`     |
+| `library`    | `unprocessed/` (files directly in it) | the prompt number, `001`–`100`         | `100_mood_music_prompts.md` |
 
 A new section is one entry in `sections.json`: an id, an intake folder, an id
 prefix, its moods, `"metadata": "measured"` and its name in all 18 app
@@ -35,6 +35,7 @@ languages. `defaultSection` is the one the app opens on.
    records how well the fit and the tempo agree with the library. A key is
    published only when the estimate matches the library's declared keys on at
    least 60 % of its tracks; otherwise it stays in the file as `keyEstimate`.
+
 3. From this repository run:
 
    ```sh
@@ -45,7 +46,7 @@ languages. `defaultSection` is the one the app opens on.
 4. The tool validates all 100 prompt records, publishes every complete A/B pair
    and lists any incomplete one it left in intake, measures MP3 frame duration,
    calculates SHA-256 and byte counts, copies the audio to stable paths under
-   `tracks/<id>/`, and regenerates `catalogue-v2.json`, `catalogue.json` and the
+   `tracks/<id>/`, and regenerates `catalogue-v2.json` and the
    metadata-only `prompt_catalogue.json`.
 5. Review both versions by listening, inspect the generated diff, then move the
    intake originals out of their folder. Do not rename published paths or
@@ -66,10 +67,29 @@ languages. `defaultSection` is the one the app opens on.
 - Every catalogue track always has exactly two versions. Incomplete pairs stay
   in intake rather than being published half-made.
 - `catalogue-v2.json` (schema 2) contains every playable pair in every section.
-  `catalogue.json` (schema 1) contains the library alone, for app builds that
-  predate sections. `prompt_catalogue.json` keeps all 100 future assignments
+  It is the single playable catalogue. `prompt_catalogue.json` keeps all 100 future assignments
   indexed without showing unavailable music in-app.
 - A catalogue revision only increments when track metadata or audio changes.
 
 The files in `tracks/` and the generated JSON are public CC0 assets. The intake
 folders are staging only and must not be the source used by the app.
+
+## Single catalogue cleanup: 2026-10-04
+
+The user confirmed that Moodlo has not been released and removed the requirement
+to preserve the old schema 1 music catalogue. `catalogue-v2.json` remains the
+single playable catalogue; the metadata-only prompt index has a separate role.
+
+| Requirement | Acceptance and verification                                                                                                                                            | Status   |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| CAT-01      | Remove `catalogue.json` and its generator output and fallback. Two isolated regression tests failed before the change and passed afterward.                            | VERIFIED |
+| CAT-02      | Preserve sections, tracks, revision, prompt index, and all audio. Real regeneration kept 124 tracks, revision 3, and all 248 MP3 hashes and catalogue sizes unchanged. | VERIFIED |
+| CAT-03      | Update active processing instructions and app references. The app already fetches schema 2; its URL is unchanged. Generator analysis and format checks passed.         | VERIFIED |
+
+The integration fixtures cover fresh generation, both sections, complete A/B
+pairs, hash/size verification, the 100-record prompt index, repeated runs after
+intake removal, and ignoring an obsolete catalogue left in a directory.
+Compatibility with schema 1 is REMOVED BY USER. Playback, network, localization,
+and UI behavior are unchanged; no migrations or new dependencies are involved.
+The earlier imports and ending corrections still await their required listening
+review and are kept separate from this catalogue cleanup's local commits.

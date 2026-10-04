@@ -1,5 +1,5 @@
 /// Validates Moodlo's music sections and turns paired renders into the public
-/// catalogues consumed by the app.
+/// catalogue consumed by the app.
 ///
 /// `sections.json` lists every section. The library's facts come from
 /// `100_mood_music_prompts.md`, which ends at 100. Every other section is
@@ -34,9 +34,6 @@ const String _catalogue = 'catalogue-v2.json';
 const String _downloadBase =
     'https://raw.githubusercontent.com/neuratim/moodlo-music/main';
 
-/// The schema-1 catalogue earlier app builds still fetch. It carries only the
-/// library, whose ids and fields are the ones those builds can parse.
-const String _legacyCatalogue = 'catalogue.json';
 const String _librarySection = 'library';
 const String _licence =
     'CC0 1.0 Universal (public domain). Composed for NeuraTiM with generative AI. No attribution required.';
@@ -66,9 +63,7 @@ Future<void> main() async {
       section['id']! as String: index,
   };
 
-  final existing =
-      _readObject(File('${root.path}/$_catalogue')) ??
-      _readObject(File('${root.path}/$_legacyCatalogue'));
+  final existing = _readObject(File('${root.path}/$_catalogue'));
   final tracks = <String, Map<String, Object?>>{
     for (final value in (existing?['tracks'] as List<Object?>? ?? const []))
       if (value is Map<String, Object?> && value['id'] is String)
@@ -204,28 +199,8 @@ Future<void> main() async {
     'tracks': ordered,
   });
 
-  final library = <Map<String, Object?>>[
-    for (final track in ordered)
-      if (track['section'] == _librarySection)
-        <String, Object?>{
-          for (final entry in track.entries)
-            if (entry.key != 'section') entry.key: entry.value,
-        },
-  ];
   final promptRows = prompts.values.toList()
     ..sort((a, b) => (a['id']! as String).compareTo(b['id']! as String));
-  final legacyFile = File('${root.path}/$_legacyCatalogue');
-  await _writeJson(legacyFile, <String, Object?>{
-    'downloadBase': _downloadBase,
-    'generatedAt': DateTime.now().toUtc().toIso8601String(),
-    'genres':
-        promptRows.map((row) => row['genre']! as String).toSet().toList()
-          ..sort(),
-    'licence': _licence,
-    'revision': _nextRevision(legacyFile, library),
-    'schema': 1,
-    'tracks': library,
-  });
   await _writeJson(
     File('${root.path}/prompt_catalogue.json'),
     <String, Object?>{'prompts': promptRows, 'schema': 1},
