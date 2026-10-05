@@ -1,9 +1,9 @@
 {
   "defaultSection": "motivation",
   "downloadBase": "https://raw.githubusercontent.com/neuratim/moodlo-music/main",
-  "generatedAt": "2026-10-04T20:24:45.343900Z",
+  "generatedAt": "2026-10-04T20:51:41.796629Z",
   "licence": "CC0 1.0 Universal (public domain). Composed for NeuraTiM with generative AI. No attribution required.",
-  "revision": 4,
+  "revision": 5,
   "schema": 2,
   "sections": [
     {
@@ -915,6 +915,646 @@
           "path": "tracks/m102/m102-b.mp3",
           "seconds": 170,
           "sha256": "48ee11a5b1f6eaf5e9f80b2a300c50c55b60645f95fb1510d3feb62923ab57a7"
+        }
+      ]
+    },
+    {
+      "id": "m103",
+      "lengthSeconds": 188,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Atardeo Tropical",
+      "versions": [
+        {
+          "bpm": 114,
+          "bytes": 4554053,
+          "energy": 3,
+          "id": "a",
+          "name": "Atardeo Tropical",
+          "path": "tracks/m103/m103-a.mp3",
+          "seconds": 188,
+          "sha256": "a17ec588c2a627db435e40bf1d2756199dafaf2178e542d70cb3d03ce09ba091"
+        },
+        {
+          "bpm": 115,
+          "bytes": 3975941,
+          "energy": 4,
+          "id": "b",
+          "name": "Atardeo Tropical",
+          "path": "tracks/m103/m103-b.mp3",
+          "seconds": 163,
+          "sha256": "acadbd8448f0b553adfb2018e8cd2bc815c3785984403a4ae9ef20e6559456cf"
+        }
+      ]
+    },
+    {
+      "id": "m104",
+      "lengthSeconds": 214,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Good Times",
+      "versions": [
+        {
+          "bpm": 126,
+          "bytes": 4915853,
+          "energy": 4,
+          "id": "a",
+          "name": "Good Times",
+          "path": "tracks/m104/m104-a.mp3",
+          "seconds": 214,
+          "sha256": "e6a7e868748698cc505b7da514c58f4816b683c5725d5c2785365acd591dfa5e"
+        },
+        {
+          "bpm": 123,
+          "bytes": 5046941,
+          "energy": 4,
+          "id": "b",
+          "name": "Good Times",
+          "path": "tracks/m104/m104-b.mp3",
+          "seconds": 220,
+          "sha256": "1f6840eadb22a83f2bdd26fa905ef77e8e7a5e9c961b601da788826abadf4101"
+        }
+      ]
+    },
+    {
+      "id": "m105",
+      "lengthSeconds": 241,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "君と行こう",
+      "versions": [
+        {
+          "bpm": 118,
+          "bytes": 5633607,
+          "energy": 4,
+          "id": "a",
+          "name": "君と行こう",
+          "path": "tracks/m105/m105-a.mp3",
+          "seconds": 241,
+          "sha256": "a63ddd7751e872a5a762e86dcc2378030088ce10f5d8e0efba5f17511a78aa4a"
+        },
+        {
+          "bpm": 120,
+          "bytes": 5334975,
+          "energy": 4,
+          "id": "b",
+          "name": "君と行こう",
+          "path": "tracks/m105/m105-b.mp3",
+          "seconds": 230,
+          "sha256": "f0e10fae318d83bfed046a87b271e0aef7bf20a05ba94a0638bd0e0c35bf5d74"
+        }
+      ]
+    },
+    {
+      "id": "m106",
+      "lengthSeconds": 192,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "We've Got Nowhere to Be",
+      "versions": [
+        {
+          "bpm": 108,
+          "bytes": 5874251,
+          "energy": 3,
+          "id": "a",
+          "name": "We've Got Nowhere to Be",
+          "path": "tracks/m106/m106-a.mp3",
+          "seconds": 192,
+          "sha256": "ef560bbaa4743479b885575cb0acc8a42af72cd24345c27302921fe9612a7d69"
+        },
+        {
+          "bpm": 106,
+          "bytes": 4156290,
+          "energy": 4,
+          "id": "b",
+          "name": "We've Got Nowhere to Be",
+          "path": "tracks/m106/m106-b.mp3",
+          "seconds": 177,
+          "sha256": "bcfc557e86969e0a9c1ffef0eaae0728ee84165cfef40cddb2692b57091b36c3"
+        }
+      ]
+    },
+    {
+      "id": "m107",
+      "lengthSeconds": 179,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Let the Good Day Carry Us",
+      "versions": [
+        {
+          "bpm": 108,
+          "bytes": 4138880,
+          "energy": 4,
+          "id": "a",
+          "name": "Let the Good Day Carry Us",
+          "path": "tracks/m107/m107-a.mp3",
+          "seconds": 179,
+          "sha256": "4dac1906706eedc05292cd935487ebb8f04c973514e29cd2576f75494da6f207"
+        },
+        {
+          "bpm": 108,
+          "bytes": 5538649,
+          "energy": 4,
+          "id": "b",
+          "name": "Let the Good Day Carry Us",
+          "path": "tracks/m107/m107-b.mp3",
+          "seconds": 179,
+          "sha256": "af83408c4f5aa40833701eab9f09123e7dc806a7c473c622b670f6f0cc0a3d64"
+        }
+      ]
+    },
+    {
+      "id": "m108",
+      "lengthSeconds": 201,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Euphoricco Eicco",
+      "versions": [
+        {
+          "bpm": 182,
+          "bytes": 4631765,
+          "energy": 4,
+          "id": "a",
+          "name": "Euphoricco Eicco",
+          "path": "tracks/m108/m108-a.mp3",
+          "seconds": 201,
+          "sha256": "3bafdd2ca3bceda19fa1b098745970744f47fdfb72904db0baa8726c5a9b1bc3"
+        },
+        {
+          "bpm": 184,
+          "bytes": 4635653,
+          "energy": 4,
+          "id": "b",
+          "name": "Euphoricco Eicco",
+          "path": "tracks/m108/m108-b.mp3",
+          "seconds": 198,
+          "sha256": "7a442e131095e6086fbf5eb5e4d97f7702d46fe50fb2fc34e18a675e662ac6d2"
+        }
+      ]
+    },
+    {
+      "id": "m109",
+      "lengthSeconds": 141,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Buant Swing",
+      "versions": [
+        {
+          "bpm": 144,
+          "bytes": 3354912,
+          "energy": 3,
+          "id": "a",
+          "name": "Buant Swing",
+          "path": "tracks/m109/m109-a.mp3",
+          "seconds": 141,
+          "sha256": "e95484c15cb27c3eafb679da297df75eded289921b92b12bf86edb427edcc27f"
+        },
+        {
+          "bpm": 148,
+          "bytes": 4650213,
+          "energy": 3,
+          "id": "b",
+          "name": "Buant Swing",
+          "path": "tracks/m109/m109-b.mp3",
+          "seconds": 150,
+          "sha256": "70e821f4d28bb003431961ae137bcea9fe30cb2758661d5efc2649aa5890de9e"
+        }
+      ]
+    },
+    {
+      "id": "m110",
+      "lengthSeconds": 222,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Borrowed Sun",
+      "versions": [
+        {
+          "bpm": 126,
+          "bytes": 5059206,
+          "energy": 4,
+          "id": "a",
+          "name": "Borrowed Sun",
+          "path": "tracks/m110/m110-a.mp3",
+          "seconds": 222,
+          "sha256": "bbc3e71226e069377f3adb6903cb99a4e3ac5b0381044678b15be20e2c30793c"
+        },
+        {
+          "bpm": 126,
+          "bytes": 6505974,
+          "energy": 4,
+          "id": "b",
+          "name": "Borrowed Sun",
+          "path": "tracks/m110/m110-b.mp3",
+          "seconds": 221,
+          "sha256": "4af57d51cb3fe6a4323f597f006a650812231d439be5bc5f227adbb2b1610323"
+        }
+      ]
+    },
+    {
+      "id": "m111",
+      "lengthSeconds": 196,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Roda Comigo",
+      "versions": [
+        {
+          "bpm": 130,
+          "bytes": 4529716,
+          "energy": 4,
+          "id": "a",
+          "name": "Roda Comigo",
+          "path": "tracks/m111/m111-a.mp3",
+          "seconds": 196,
+          "sha256": "bc9b59d0420a3038956b0878a4a9bb37a9df318b10a22ad1d630bff9cc83c85c"
+        },
+        {
+          "bpm": 130,
+          "bytes": 4358068,
+          "energy": 4,
+          "id": "b",
+          "name": "Roda Comigo",
+          "path": "tracks/m111/m111-b.mp3",
+          "seconds": 186,
+          "sha256": "c097fb3e067f26652a246cbc896601e4f5c83cdf5587e120e1ec8fc005f13606"
+        }
+      ]
+    },
+    {
+      "id": "m112",
+      "lengthSeconds": 133,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Buantoran Pagi",
+      "versions": [
+        {
+          "bpm": 106,
+          "bytes": 3126339,
+          "energy": 3,
+          "id": "a",
+          "name": "Buantoran Pagi",
+          "path": "tracks/m112/m112-a.mp3",
+          "seconds": 133,
+          "sha256": "cb4c5a27e37532c477f74d35a8d71cf75d8c6ae263e99c4ee786a0df567e8217"
+        },
+        {
+          "bpm": 136,
+          "bytes": 3541443,
+          "energy": 3,
+          "id": "b",
+          "name": "Buantoran Pagi",
+          "path": "tracks/m112/m112-b.mp3",
+          "seconds": 154,
+          "sha256": "6de153b763cbbbf9620ca46787307e1a24c020ea66621ebf69db901c65634556"
+        }
+      ]
+    },
+    {
+      "id": "m113",
+      "lengthSeconds": 188,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "All Day in the Sun",
+      "versions": [
+        {
+          "bpm": 114,
+          "bytes": 4380336,
+          "energy": 4,
+          "id": "a",
+          "name": "All Day in the Sun",
+          "path": "tracks/m113/m113-a.mp3",
+          "seconds": 188,
+          "sha256": "88ded731234720293ee3f61af8b2ef2860bce09650f751fce6b48eb3c6444bbe"
+        },
+        {
+          "bpm": 112,
+          "bytes": 4695936,
+          "energy": 3,
+          "id": "b",
+          "name": "All Day in the Sun",
+          "path": "tracks/m113/m113-b.mp3",
+          "seconds": 207,
+          "sha256": "9e699ef7693f1191969427ac037d3250377965129f5b7db661b528333e296b0c"
+        }
+      ]
+    },
+    {
+      "id": "m114",
+      "lengthSeconds": 239,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Good Time Line",
+      "versions": [
+        {
+          "bpm": 126,
+          "bytes": 5539610,
+          "energy": 4,
+          "id": "a",
+          "name": "Good Time Line",
+          "path": "tracks/m114/m114-a.mp3",
+          "seconds": 239,
+          "sha256": "e0db1e76f9da15e29ec6bc790f98571496ffe83b42158c1300c031eb7e006538"
+        },
+        {
+          "bpm": 126,
+          "bytes": 5501642,
+          "energy": 4,
+          "id": "b",
+          "name": "Good Time Line",
+          "path": "tracks/m114/m114-b.mp3",
+          "seconds": 234,
+          "sha256": "16cb9aa7e83da24676abffb87b83aad61f80ee681c0df27942ea7e740cc555d4"
+        }
+      ]
+    },
+    {
+      "id": "m115",
+      "lengthSeconds": 268,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "The Long Way Home",
+      "versions": [
+        {
+          "bpm": 118,
+          "bytes": 8377143,
+          "energy": 4,
+          "id": "a",
+          "name": "The Long Way Home",
+          "path": "tracks/m115/m115-a.mp3",
+          "seconds": 268,
+          "sha256": "582e27ed9518b8c251309c1ca17ad6900d22b0451a89d3aa3311133ee63fdfcc"
+        },
+        {
+          "bpm": 118,
+          "bytes": 5672420,
+          "energy": 4,
+          "id": "b",
+          "name": "The Long Way Home",
+          "path": "tracks/m115/m115-b.mp3",
+          "seconds": 247,
+          "sha256": "2a09185a5facc970bfa56e3b7fcbbc2dab6caae7c37e6aa2f0ecc6ae6f72f8b7"
+        }
+      ]
+    },
+    {
+      "id": "m116",
+      "lengthSeconds": 182,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "The Long Way Home",
+      "versions": [
+        {
+          "bpm": 106,
+          "bytes": 4338247,
+          "energy": 4,
+          "id": "a",
+          "name": "The Long Way Home",
+          "path": "tracks/m116/m116-a.mp3",
+          "seconds": 182,
+          "sha256": "411a4dac5f3b10390d91926390845a509fa7082e0572495017365b447f3287f6"
+        },
+        {
+          "bpm": 106,
+          "bytes": 4333292,
+          "energy": 4,
+          "id": "b",
+          "name": "The Long Way Home",
+          "path": "tracks/m116/m116-b.mp3",
+          "seconds": 184,
+          "sha256": "3a3b226a8aa27f3508d1d448afef768db0abb33e89896c8d7fe7d87d6e437186"
+        }
+      ]
+    },
+    {
+      "id": "m117",
+      "lengthSeconds": 201,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Dance into the Evening Light",
+      "versions": [
+        {
+          "bpm": 108,
+          "bytes": 4608050,
+          "energy": 4,
+          "id": "a",
+          "name": "Dance into the Evening Light",
+          "path": "tracks/m117/m117-a.mp3",
+          "seconds": 201,
+          "sha256": "853c8e34e027254f8fcf81d197f1ff7592d6d2d46f4991c0d5a591fec638ec1c"
+        },
+        {
+          "bpm": 108,
+          "bytes": 4814861,
+          "energy": 4,
+          "id": "b",
+          "name": "Let the Good Days Grow",
+          "path": "tracks/m117/m117-b.mp3",
+          "seconds": 202,
+          "sha256": "bd8c59b3185903aeda968fbec7e40f9c22a3215e13bfabcdc46bb92e4c81cd04"
+        }
+      ]
+    },
+    {
+      "id": "m118",
+      "lengthSeconds": 199,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Fresh Air Momentum",
+      "versions": [
+        {
+          "bpm": 184,
+          "bytes": 4482151,
+          "energy": 4,
+          "id": "a",
+          "name": "Fresh Air Momentum",
+          "path": "tracks/m118/m118-a.mp3",
+          "seconds": 199,
+          "sha256": "ff3a88a87860809fcc60b5e64cdb68b5caae9158fca3bb04f9edb9e077daeaf4"
+        },
+        {
+          "bpm": 184,
+          "bytes": 4525831,
+          "energy": 4,
+          "id": "b",
+          "name": "Fresh Air Momentum",
+          "path": "tracks/m118/m118-b.mp3",
+          "seconds": 198,
+          "sha256": "b405d4927f15e9571214e95d54d8458ee3b4f71453281e72a17d271d5f9fdaf7"
+        }
+      ]
+    },
+    {
+      "id": "m119",
+      "lengthSeconds": 170,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Sunny Morning City",
+      "versions": [
+        {
+          "bpm": 152,
+          "bytes": 4057735,
+          "energy": 3,
+          "id": "a",
+          "name": "Sunny Morning City",
+          "path": "tracks/m119/m119-a.mp3",
+          "seconds": 170,
+          "sha256": "9c5fc307ab0bbeb2a2f1272cd6759764bb04eb5cf0e9c7a029f103abbb4d080f"
+        },
+        {
+          "bpm": 152,
+          "bytes": 2755624,
+          "energy": 3,
+          "id": "b",
+          "name": "Big Band Swing",
+          "path": "tracks/m119/m119-b.mp3",
+          "seconds": 119,
+          "sha256": "eee701fb01ca650b70cbb7ab0599de1e8355b012730da0fc195a775ca1ae5eb8"
+        }
+      ]
+    },
+    {
+      "id": "m120",
+      "lengthSeconds": 240,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Up Into Tomorrow",
+      "versions": [
+        {
+          "bpm": 129,
+          "bytes": 5439811,
+          "energy": 4,
+          "id": "a",
+          "name": "Up Into Tomorrow",
+          "path": "tracks/m120/m120-a.mp3",
+          "seconds": 240,
+          "sha256": "041143e654d614d114adb82abc017fb84b1db2fcac372a6d7eef461f59dc919d"
+        },
+        {
+          "bpm": 129,
+          "bytes": 5368172,
+          "energy": 4,
+          "id": "b",
+          "name": "Up Into Tomorrow",
+          "path": "tracks/m120/m120-b.mp3",
+          "seconds": 236,
+          "sha256": "7254be749f57f6c1ae1c9d08c1c2228d0eef4904478d4d5174a5b2ae93ebb591"
+        }
+      ]
+    },
+    {
+      "id": "m121",
+      "lengthSeconds": 153,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Vem Pra Roda",
+      "versions": [
+        {
+          "bpm": 132,
+          "bytes": 3477611,
+          "energy": 4,
+          "id": "a",
+          "name": "Vem Pra Roda",
+          "path": "tracks/m121/m121-a.mp3",
+          "seconds": 153,
+          "sha256": "57f2937fa31893d282d388171e20023abac26046214d97b0f8574c03520128fb"
+        },
+        {
+          "bpm": 136,
+          "bytes": 3549803,
+          "energy": 4,
+          "id": "b",
+          "name": "Vem Pra Roda",
+          "path": "tracks/m121/m121-b.mp3",
+          "seconds": 154,
+          "sha256": "3413cc604f37ac2733786a9e8cabcacdb0ef98beb3202d0bde380d3e93c48acb"
+        }
+      ]
+    },
+    {
+      "id": "m122",
+      "lengthSeconds": 142,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "Triumphant Dawn",
+      "versions": [
+        {
+          "bpm": 106,
+          "bytes": 3274228,
+          "energy": 3,
+          "id": "a",
+          "name": "Triumphant Dawn",
+          "path": "tracks/m122/m122-a.mp3",
+          "seconds": 142,
+          "sha256": "115add548510de7e7586ac221116857ed1b89b090fd5d8221a00369604d304be"
+        },
+        {
+          "bpm": 140,
+          "bytes": 3128260,
+          "energy": 3,
+          "id": "b",
+          "name": "Triumphant Dawn",
+          "path": "tracks/m122/m122-b.mp3",
+          "seconds": 133,
+          "sha256": "d4f6d6f68dfe1d9994e7fa294bfc3fa544e96e08ffbffdc26243fbd9bc462f4e"
         }
       ]
     },

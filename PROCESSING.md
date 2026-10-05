@@ -324,3 +324,50 @@ and final sample counts and metadata for changed renders, and all 248 paths
 against the pre-correction baseline. Seven unfaded backups and the correction
 verification evidence are retained at
 `C:/Users/ticho/AppData/Local/Temp/moodlo-music-endings-p8bgide6/`.
+
+## New Motivation batch: 2026-10-04
+
+Prepared the 20 numbered A/B pairs from `unprocessed/` as Motivation tracks
+`m103`-`m122`. The user selected a uniform two-number offset: source 101 becomes
+`m103`, through source 120 becoming `m122`. Existing `m101` (Open the Day) and
+`m102` (Sunlit Strut) contain different songs and remain unchanged.
+
+The local catalogue is revision 5: 144 compositions, 288 renders, comprising
+47 Motivation and 97 library compositions. Titles follow A; alternative render
+labels, including Japanese text and different A/B names, are preserved.
+Both versions have independently measured tempo and energy. The existing
+97-library-render calibration is unchanged; keys remain unpublished because
+only 38 of 97 calibration keys match. No genre, language, or other unmeasurable
+filter value was invented.
+
+Five new renders needed the supplied five-second fade: `m106-a`, `m107-b`,
+`m109-b`, `m110-b`, and `m115-a`. Corrected copies were remeasured before
+catalogue generation. FFprobe confirms unchanged decoded sample counts;
+the fade tool also verifies sample rate, channels, tags, and artwork.
+All other 35 new renders preserve their original bytes. All 248 existing
+published MP3 hashes and all 124 existing catalogue records are unchanged.
+
+| Requirement | Acceptance and observed verification                                                                                                                                    | Status   |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| MOT-01      | Twenty complete numbered pairs use the user-approved IDs m103-m122, with no collision or half-published track.                                                          | VERIFIED |
+| MOT-02      | All forty renders have measured BPM/energy, correct duration, byte count, SHA-256, stable paths, names, and Motivation moods.                                           | VERIFIED |
+| MOT-03      | Final scan of the actual tracks folder passes for all 288 renders after five new fades; all 40 new renders fully decode.                                                | VERIFIED |
+| MOT-04      | All 42 source originals, 248 existing audio hashes, 124 prior catalogue records, old measurements, and the 100-prompt index are preserved.                              | VERIFIED |
+| MOT-05      | The real Dart generator passes twice with stable tracks/revision; the actual app parser accepts 144 tracks and measured filters; both generator integration tests pass. | VERIFIED |
+| MOT-06      | `npm run check moodlo` passes all 17 gates, including 151 Flutter tests, 10 admin tests, and both release web builds.                                                   | VERIFIED |
+| MOT-07      | The two unnumbered files need a confirmed A/B grouping and an unused ID.                                                                                                | BLOCKED  |
+| MOT-08      | Intake step 5 listening review is unconfirmed, so intake archival and the local import commit remain pending.                                                           | BLOCKED  |
+
+`I Choose the Road.mp3` and `There’s Room in This Parade.mp3` remain unchanged
+and unpublished. Both pass the ending checker. Their pairing is not inferred
+from filenames. All source originals remain in `unprocessed/` pending listening
+review and disposition of the loose files. The batch was generated in an
+isolated Motivation intake so root-folder inputs were never misclassified as
+library prompts. Do not run the root importer against those unclassified
+originals: it would reject their numbers/names. After review, move the originals
+out of the active intake as required by step 5; reuse the corrected published
+renders if reconstructing intake, so original audio cannot undo the fades.
+
+Temporary ending reports and measurement dependencies are removed after
+verification; the required production input `analysis/motivation.json` remains.
+Nothing is pushed, and no session-owned process is left running.
