@@ -1,8 +1,8 @@
-/// Validates Moodlo's music sections and turns paired renders into the public
+/// Validates Moodlo's music sections and turns renders into the public
 /// catalogue consumed by the app.
 ///
 /// `sections.json` lists every section. The library's facts come from
-/// `100_mood_music_prompts.md`, which ends at 100. Every other section is
+/// `prompt_catalogue.json`, which ends at 100. Every other section is
 /// `measured`: its facts come from `tool/analyze_audio.py`, and its numbering
 /// continues without limit under its own id prefix (`m001`, `m002`, …).
 library;
@@ -41,7 +41,7 @@ const List<int> _sampleRates = <int>[44100, 48000, 32000, 0];
 
 Future<void> main() async {
   final root = Directory.current;
-  final promptFile = File('${root.path}/100_mood_music_prompts.md');
+  final promptFile = File('${root.path}/prompt_catalogue.json');
   final sectionsFile = File('${root.path}/sections.json');
   if (!promptFile.existsSync() || !sectionsFile.existsSync()) {
     stderr.writeln('Run from packages/moodlo/music.');
@@ -49,8 +49,19 @@ Future<void> main() async {
     return;
   }
 
-  final prompts = _parsePrompts(await promptFile.readAsString());
-  if (prompts.length != 100) {
+  final promptIndex = _readObject(promptFile)!;
+  final prompts = <String, Map<String, Object?>>{
+    for (final value in promptIndex['prompts']! as List<Object?>)
+      if (value is Map<String, Object?> && value['id'] is String)
+        value['id']! as String: value,
+  };
+  if (promptIndex['schema'] != 1 ||
+      (promptIndex['prompts']! as List<Object?>).length != 100 ||
+      prompts.length != 100 ||
+      !List.generate(
+        100,
+        (index) => (index + 1).toString().padLeft(3, '0'),
+      ).every(prompts.containsKey)) {
     throw StateError('Expected 100 prompts, found ${prompts.length}.');
   }
   final sectionsJson = _readObject(sectionsFile)!;
@@ -72,8 +83,6 @@ Future<void> main() async {
           ...value,
         },
   };
-  final waiting = <String>[];
-
   for (final section in sections) {
     final sectionId = section['id']! as String;
     final prefix = section['prefix']! as String;
@@ -90,11 +99,23 @@ Future<void> main() async {
       if (!measured && !prompts.containsKey(entry.key)) {
         throw FormatException('No prompt ${entry.key} exists.');
       }
-      final variants = entry.value.map(_variantOf).toSet();
-      if (entry.value.length != 2 ||
-          !variants.containsAll(const <String>{'a', 'b'})) {
-        waiting.add('$trackId in ${section['intake']}: needs one A and one B');
-        continue;
+      final variants = entry.value.map(_variantOf).toList()..sort();
+      final prior =
+          tracks[trackId]?['versions'] as List<Object?>? ?? const <Object?>[];
+      if (prior.any(
+        (version) =>
+            !variants.contains((version! as Map<String, Object?>)['id']),
+      )) {
+        throw FormatException(
+          '$trackId intake must include every existing render.',
+        );
+      }
+      if (variants.indexed.any(
+        (entry) => entry.$2 != String.fromCharCode(97 + entry.$1),
+      )) {
+        throw FormatException(
+          '$trackId needs unique consecutive renders from A.',
+        );
       }
 
       final target = Directory('${root.path}/tracks/$trackId')
@@ -155,10 +176,18 @@ Future<void> main() async {
 
   for (final track in tracks.values) {
     final versions = track['versions'];
-    if (versions is! List || versions.length != 2) {
+    if (versions is! List || versions.isEmpty || versions.length > 26) {
       throw StateError(
-        'Published track ${track['id']} does not have two versions.',
+        'Published track ${track['id']} needs one to 26 versions.',
       );
+    }
+    final variants = <String>[
+      for (final version in versions) (version as Map)['id'] as String,
+    ]..sort();
+    if (variants.indexed.any(
+      (entry) => entry.$2 != String.fromCharCode(97 + entry.$1),
+    )) {
+      throw StateError('Published track ${track['id']} has invalid versions.');
     }
     if (!sectionOrder.containsKey(track['section'])) {
       throw StateError('Track ${track['id']} is in an unknown section.');
@@ -209,9 +238,6 @@ Future<void> main() async {
     'Published ${ordered.length} tracks in ${sections.length} sections and '
     'indexed ${prompts.length} prompts.',
   );
-  for (final line in waiting) {
-    stdout.writeln('Left in intake: $line.');
-  }
 }
 
 int _nextRevision(File file, List<Map<String, Object?>> tracks) {
@@ -235,62 +261,17 @@ Map<String, List<File>> _pairs(Directory intake) {
   )) {
     final name = file.uri.pathSegments.last;
     final match = RegExp(
-      r'^(\d{3})(b)?-(.+)\.mp3$',
+      r'^(\d{3})([b-z])?-(.+)\.mp3$',
       caseSensitive: false,
     ).firstMatch(name);
     if (match == null) {
-      throw FormatException('$name must be NNN-Title.mp3 or NNNb-Title.mp3.');
+      throw FormatException(
+        '$name must be NNN-Title.mp3 or NNN[b-z]-Title.mp3.',
+      );
     }
     grouped.putIfAbsent(match.group(1)!, () => <File>[]).add(file);
   }
   return grouped;
-}
-
-Map<String, Object?> _parseTagLine(String line) {
-  final result = <String, Object?>{};
-  final body = line.substring(1, line.length - 1);
-  String? currentKey;
-  for (final raw in body.split(';')) {
-    final part = raw.trim();
-    final equals = part.indexOf('=');
-    if (equals > 0) {
-      currentKey = part.substring(0, equals).trim();
-      final value = part.substring(equals + 1).trim();
-      result[currentKey] = value;
-    } else if (currentKey == 'mood') {
-      result['mood'] = '${result['mood']};$part';
-    } else {
-      throw FormatException('Malformed tag segment "$part".');
-    }
-  }
-  result['bpm'] = int.parse(result['bpm']! as String);
-  result['energy'] = int.parse((result['energy']! as String).split('/').first);
-  result['lengthSeconds'] = int.parse(
-    (result.remove('length')! as String).replaceAll('s', ''),
-  );
-  result['moods'] = (result.remove('mood')! as String).split(';');
-  return result;
-}
-
-Map<String, Map<String, Object?>> _parsePrompts(String source) {
-  final prompts = <String, Map<String, Object?>>{};
-  String? id;
-  String? title;
-  for (final line in const LineSplitter().convert(source)) {
-    final heading = RegExp(r'^### (\d{3})\s+[—-]\s+(.+)$').firstMatch(line);
-    if (heading != null) {
-      id = heading.group(1);
-      title = heading.group(2)!.trim();
-      continue;
-    }
-    if (id == null || title == null || !line.startsWith('[id=$id;')) continue;
-    final tags = _parseTagLine(line);
-    if (tags['id'] != id) throw FormatException('Prompt id mismatch at $id.');
-    prompts[id] = <String, Object?>{...tags, 'title': title};
-    id = null;
-    title = null;
-  }
-  return prompts;
 }
 
 Map<String, Object?>? _readObject(File file) {
@@ -305,18 +286,16 @@ String _renderName(File file) {
     '',
   );
   return name
-      .replaceFirst(RegExp(r'^\d{3}b?-', caseSensitive: false), '')
+      .replaceFirst(RegExp(r'^\d{3}[b-z]?-', caseSensitive: false), '')
       .trim();
 }
 
 String _variantOf(File file) =>
     RegExp(
-          r'^\d{3}(b)?-',
-          caseSensitive: false,
-        ).firstMatch(file.uri.pathSegments.last)!.group(1) ==
-        null
-    ? 'a'
-    : 'b';
+      r'^\d{3}([b-z])?-',
+      caseSensitive: false,
+    ).firstMatch(file.uri.pathSegments.last)!.group(1)?.toLowerCase() ??
+    'a';
 
 ({Set<int> rates, double seconds}) _measureAudio(List<int> bytes) {
   var position = 0;

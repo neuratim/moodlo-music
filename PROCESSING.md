@@ -1,16 +1,16 @@
 # Processing new Moodlo music
 
-Moodlo publishes each composition as a pair of alternative renders, filed in a
+Moodlo publishes each composition as one render or several alternatives, filed in a
 section from `sections.json`. Audio filenames are only render labels: a library
 track's title and filters come from the prompt library, and a measured
 section's from the audio.
 
 ## Sections
 
-| Section      | Intake folder                         | Ids                                    | Facts come from             |
-| ------------ | ------------------------------------- | -------------------------------------- | --------------------------- |
-| `motivation` | `unprocessed/zoo/`                    | `m` + the file number (`m001`, `m101`) | `tool/analyze_audio.py`     |
-| `library`    | `unprocessed/` (files directly in it) | the prompt number, `001`–`100`         | `100_mood_music_prompts.md` |
+| Section      | Intake folder                         | Ids                                    | Facts come from         |
+| ------------ | ------------------------------------- | -------------------------------------- | ----------------------- |
+| `motivation` | `unprocessed/zoo/`                    | `m` + the file number (`m001`, `m101`) | `tool/analyze_audio.py` |
+| `library`    | `unprocessed/` (files directly in it) | the prompt number, `001`–`100`         | `prompt_catalogue.json` |
 
 A new section is one entry in `sections.json`: an id, an intake folder, an id
 prefix, its moods, `"metadata": "measured"` and its name in all 18 app
@@ -18,10 +18,14 @@ languages. `defaultSection` is the one the app opens on.
 
 ## Intake contract
 
-1. Put exactly two MP3 files for a composition in its section's intake folder:
-   `NNN-Render name.mp3` and `NNNb-Render name.mp3`. For the library, `NNN`
-   must exist in `100_mood_music_prompts.md`. The first file becomes version A,
-   the `b` file version B. Different render names are allowed.
+1. Put `NNN-Render name.mp3` in the section's intake folder for a single track.
+   Add `NNNb-Render name.mp3`, `NNNc-Render name.mp3`, and so on for alternatives,
+   up to Z. For the library, `NNN` must exist in `prompt_catalogue.json`.
+   The first file becomes stored render A, the `b` file B, and so on; the app
+   labels alternatives Version 1, Version 2, etc. Different render names are
+   allowed. Renders must be unique and consecutive from A. When updating an
+   existing composition, include every existing render so none can be removed
+   by partial intake.
 2. For a measured section, measure the renders first (numpy and soundfile, no
    other dependency; libsndfile ≥ 1.1 decodes MP3):
 
@@ -43,8 +47,8 @@ languages. `defaultSection` is the one the app opens on.
    dart run tool/prepare_music.dart
    ```
 
-4. The tool validates all 100 prompt records, publishes every complete A/B pair
-   and lists any incomplete one it left in intake, measures MP3 frame duration,
+4. The tool validates the retained 100-record prompt index and every composition's
+   render sequence, measures MP3 frame duration,
    calculates SHA-256 and byte counts, copies the audio to stable paths under
    `tracks/<id>/`, and regenerates `catalogue-v2.json` and the
    metadata-only `prompt_catalogue.json`.
@@ -56,17 +60,17 @@ languages. `defaultSection` is the one the app opens on.
 
 ## Metadata rules
 
-- A library track's filters come from the bracketed tag line in the prompt
-  library: age, genre, style, moods, energy, vocals, language, use, BPM, meter,
+- A library track's filters come from its retained record in the prompt
+  index: age, genre, style, moods, energy, vocals, language, use, BPM, meter,
   intended length, key, and content rating.
 - A measured track carries its title (the A render's name), its section's
   moods, its length, and per render the measured tempo and energy — plus the key
   when it is reliable. Anything that cannot be measured is left out rather than
   guessed, and the app's filters simply do not offer it for that track.
 - Suggested age is a creative/filtering hint, never an access restriction.
-- Every catalogue track always has exactly two versions. Incomplete pairs stay
-  in intake rather than being published half-made.
-- `catalogue-v2.json` (schema 2) contains every playable pair in every section.
+- Every catalogue track has one to 26 unique, consecutive renders, starting
+  at A. A single render has no version label or composition heading in the app.
+- `catalogue-v2.json` (schema 2) contains every playable composition in every section.
   It is the single playable catalogue. `prompt_catalogue.json` keeps all 100 future assignments
   indexed without showing unavailable music in-app.
 - A catalogue revision only increments when track metadata or audio changes.
@@ -74,7 +78,35 @@ languages. `defaultSection` is the one the app opens on.
 The files in `tracks/` and the generated JSON are public CC0 assets. The intake
 folders are staging only and must not be the source used by the app.
 
-## Single catalogue cleanup: 2026-10-04
+## Standalone Motivation track: 2026-10-09
+
+The user selected `unprocessed/There’s Room in This Parade.mp3` as a standalone
+Motivation track and requested it first. It is `m000`, before the existing
+`m001` entry; no prior IDs or audio were reindexed or changed. The original
+remains untouched and is not paired with the other loose song in intake.
+This entry supersedes the historical unclassified status of this file below.
+
+The published copy is `tracks/m000/m000-a.mp3`: 217 frame-measured seconds,
+123 BPM, measured energy 4/4, and 5,129,230 bytes. Calibration against the existing
+97 library renders is unchanged; the estimated key remains unpublished because
+the calibration does not meet the key-confidence threshold. The new composition
+retains Motivation's existing moods. No unmeasured genre or language is added.
+
+The actual generator ran twice in isolated intake, preserving all 144 prior
+track records, all 288 prior audio hashes, and the 100-record prompt index.
+The final MP3 fully decoded with FFmpeg and passed the app repository's own
+size, SHA-256 and MPEG-frame duration validation before being saved and reopened
+from an isolated real database. The public and bundled app catalogues are
+identical, with 145 compositions and 289 renders. The app/package version is
+unchanged; the existing catalogue revision advances only to reflect its changed
+content.
+
+The original markdown prompt brief was intentionally removed in commit
+`30c373e`; generation now reads the retained `prompt_catalogue.json` instead.
+Generator fixtures cover standalone imports, repeated generation, A/B/C paths
+and rejection of partial intake that would discard a published alternative.
+
+## Historical single catalogue cleanup: 2026-10-04
 
 The user confirmed that Moodlo has not been released and removed the requirement
 to preserve the old schema 1 music catalogue. `catalogue-v2.json` remains the

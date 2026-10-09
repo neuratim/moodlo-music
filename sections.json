@@ -57,7 +57,7 @@
       },
       "metadata": "prompts",
       "prefix": "",
-      "source": "100_mood_music_prompts.md"
+      "source": "prompt_catalogue.json"
     }
   ]
 }

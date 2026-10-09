@@ -1,9 +1,9 @@
 {
   "defaultSection": "motivation",
   "downloadBase": "https://raw.githubusercontent.com/neuratim/moodlo-music/main",
-  "generatedAt": "2026-10-04T20:51:41.796629Z",
+  "generatedAt": "2026-10-09T09:41:58.651904Z",
   "licence": "CC0 1.0 Universal (public domain). Composed for NeuraTiM with generative AI. No attribution required.",
-  "revision": 5,
+  "revision": 6,
   "schema": 2,
   "sections": [
     {
@@ -54,6 +54,28 @@
     }
   ],
   "tracks": [
+    {
+      "id": "m000",
+      "lengthSeconds": 217,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "There’s Room in This Parade",
+      "versions": [
+        {
+          "bpm": 123,
+          "bytes": 5129230,
+          "energy": 4,
+          "id": "a",
+          "name": "There’s Room in This Parade",
+          "path": "tracks/m000/m000-a.mp3",
+          "seconds": 217,
+          "sha256": "3ffeb53d4ac70de9c267961cc21d85c2bb4d15c0e9faed623494c53e64da7735"
+        }
+      ]
+    },
     {
       "id": "m001",
       "lengthSeconds": 195,

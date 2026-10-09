@@ -29,7 +29,7 @@ MAJOR = np.array([6.35, 2.23, 3.48, 2.33, 4.38, 4.09, 2.52, 5.19, 2.39, 3.66, 2.
 MINOR = np.array([6.33, 2.68, 3.52, 5.38, 2.60, 3.53, 2.54, 4.75, 3.98, 2.69, 3.34, 3.17])
 RATE = 22050
 ROOT = Path(__file__).resolve().parents[1]
-RENDER = re.compile(r"^(\d{3})(b)?-(.+)\.mp3$", re.IGNORECASE)
+RENDER = re.compile(r"^(\d{3})([b-z])?-(.+)\.mp3$", re.IGNORECASE)
 
 
 def load(path):
@@ -189,7 +189,9 @@ def main():
         measured["bpm"] = int(round(measured["bpm"]))
         measured["keyEstimate"] = measured.pop("key")
         measured["key"] = measured["keyEstimate"] if report["publishKeys"] else None
-        renders[f"{section['prefix']}{match.group(1)}-{'b' if match.group(2) else 'a'}"] = {
+        renders[
+            f"{section['prefix']}{match.group(1)}-{(match.group(2) or 'a').lower()}"
+        ] = {
             **measured,
             "file": path.name,
         }

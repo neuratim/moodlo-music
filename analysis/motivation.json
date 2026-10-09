@@ -8,6 +8,19 @@
   },
   "publishKeys": false,
   "renders": {
+    "m000-a": {
+      "bpm": 123,
+      "centroidHz": 3206.3,
+      "energy": 4,
+      "file": "000-There’s Room in This Parade.mp3",
+      "key": null,
+      "keyConfidence": 0.723,
+      "keyEstimate": "D major",
+      "loudnessDb": -18.36,
+      "onsetStrength": 0.04834,
+      "onsetsPerSecond": 3.484,
+      "seconds": 216.71
+    },
     "m001-a": {
       "bpm": 126,
       "centroidHz": 3251.0,
