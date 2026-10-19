@@ -13,7 +13,8 @@ The shelf is divided into sections, listed in `sections.json`:
   `prompt_catalogue.json`, which retains their complete filter metadata.
 
 The library ends at 100; every other section numbers on without limit under its
-own prefix. `catalogue-v2.json` is the single playable catalogue the app reads.
+own prefix. `catalogue-v2.json` is the single playable catalogue the app reads. Each
+composition's cover is `artwork/<id>.webp` (see `PROCESSING.md`).
 `prompt_catalogue.json` indexes the 100 written assignments, including music
 that is not available yet. See `PROCESSING.md` for the repeatable intake
 procedure. Published files are CC0 1.0 Universal.

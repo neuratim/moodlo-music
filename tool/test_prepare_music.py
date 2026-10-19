@@ -164,5 +164,76 @@ class PrepareMusicTests(unittest.TestCase):
         )
 
 
+    def webp(self, name, size):
+        path = self.root / "artwork" / name
+        path.parent.mkdir(exist_ok=True)
+        subprocess.run(
+            [
+                "ffmpeg",
+                "-v",
+                "error",
+                "-f",
+                "lavfi",
+                "-i",
+                f"color=c=orange:s={size}",
+                "-frames:v",
+                "1",
+                "-y",
+                str(path),
+            ],
+            check=True,
+            capture_output=True,
+        )
+        return path.read_bytes()
+
+    def run_tool(self):
+        return subprocess.run(
+            [
+                shutil.which("dart"),
+                f"--packages={REPOSITORY / '.dart_tool/package_config.json'}",
+                str(REPOSITORY / "tool/prepare_music.dart"),
+            ],
+            cwd=self.root,
+            capture_output=True,
+            text=True,
+        )
+
+    def test_a_cover_is_published_with_its_size_and_hash_and_bumps_the_revision(self):
+        before = self.generate()
+        self.assertNotIn("artwork", before["tracks"][1])
+        cover = self.webp("001.webp", "320x320")
+        catalogue = self.generate()
+        library = catalogue["tracks"][1]
+        self.assertEqual(
+            library["artwork"],
+            {
+                "bytes": len(cover),
+                "path": "artwork/001.webp",
+                "sha256": hashlib.sha256(cover).hexdigest(),
+            },
+        )
+        self.assertNotIn("artwork", catalogue["tracks"][0], "No cover, no entry")
+        self.assertEqual(catalogue["revision"], before["revision"] + 1)
+        self.assertEqual(self.generate()["revision"], catalogue["revision"])
+        # Removing the cover takes it out again.
+        (self.root / "artwork/001.webp").unlink()
+        self.assertNotIn("artwork", self.generate()["tracks"][1])
+
+    def test_a_cover_that_is_not_square_or_not_a_track_is_refused(self):
+        catalogue = self.generate()
+        self.webp("001.webp", "320x200")
+        result = self.run_tool()
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("must be square", result.stderr)
+        (self.root / "artwork/001.webp").unlink()
+        self.webp("077.webp", "320x320")
+        result = self.run_tool()
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("is not the cover of a published track", result.stderr)
+        self.assertEqual(
+            json.loads((self.root / "catalogue-v2.json").read_text("utf-8")), catalogue
+        )
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -58,6 +58,18 @@ languages. `defaultSection` is the one the app opens on.
 6. Commit and push this repository. The app accepts only HTTPS files below the
    fixed `neuratim/moodlo-music` raw-GitHub path and verifies size and SHA-256.
 
+## Covers
+
+A composition may have a cover: `artwork/<id>.webp`, square, 128 to 1024 pixels
+a side and at most 256 KiB. `prepare_music.dart` lists it on the track as
+`"artwork": {"path", "bytes", "sha256"}` and refuses a cover that is not square,
+too large, not WebP, or named after no published track. The app fetches each
+cover once from its fixed path, verifies it and keeps it; a composition without
+one shows the app's placeholder. The 145 covers of 19 October 2026 were drawn
+by Codex from each track's title, style and moods in 4 x 4 sheets, reviewed and
+cut into 384-pixel tiles. Replacing a cover changes its hash, and the catalogue
+revision moves with it.
+
 ## Metadata rules
 
 - A library track's filters come from its retained record in the prompt

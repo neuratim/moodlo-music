@@ -35,6 +35,12 @@ const String _downloadBase =
     'https://raw.githubusercontent.com/neuratim/moodlo-music/main';
 
 const String _librarySection = 'library';
+
+/// A composition's cover: `artwork/<id>.webp`, square, small and optional. A
+/// composition without one shows the app's placeholder.
+const int _artworkLimit = 256 * 1024;
+const int _artworkMinSide = 128;
+const int _artworkMaxSide = 1024;
 const String _licence =
     'CC0 1.0 Universal (public domain). Composed for NeuraTiM with generative AI. No attribution required.';
 const List<int> _sampleRates = <int>[44100, 48000, 32000, 0];
@@ -199,6 +205,28 @@ Future<void> main() async {
       }
       track.addAll(prompt);
     }
+    final artwork = File('${root.path}/artwork/${track['id']}.webp');
+    if (artwork.existsSync()) {
+      final bytes = await artwork.readAsBytes();
+      _validateArtwork(bytes, artwork.path);
+      track['artwork'] = <String, Object?>{
+        'bytes': bytes.length,
+        'path': 'artwork/${track['id']}.webp',
+        'sha256': sha256.convert(bytes).toString(),
+      };
+    } else {
+      track.remove('artwork');
+    }
+  }
+  final covers = Directory('${root.path}/artwork');
+  if (covers.existsSync()) {
+    for (final file in covers.listSync().whereType<File>()) {
+      final name = file.uri.pathSegments.last;
+      if (!name.endsWith('.webp') ||
+          !tracks.containsKey(name.substring(0, name.length - 5))) {
+        throw StateError('$name is not the cover of a published track.');
+      }
+    }
   }
   final ordered = tracks.values.toList()
     ..sort((a, b) {
@@ -238,6 +266,48 @@ Future<void> main() async {
     'Published ${ordered.length} tracks in ${sections.length} sections and '
     'indexed ${prompts.length} prompts.',
   );
+}
+
+/// A cover the app can show: a WebP within [_artworkLimit] whose square side
+/// lies between [_artworkMinSide] and [_artworkMaxSide].
+void _validateArtwork(List<int> bytes, String path) {
+  if (bytes.length > _artworkLimit) {
+    throw FormatException('$path is larger than $_artworkLimit bytes.');
+  }
+  final size = _webpSize(bytes);
+  if (size == null) throw FormatException('$path is not a WebP image.');
+  final (width, height) = size;
+  if (width != height || width < _artworkMinSide || width > _artworkMaxSide) {
+    throw FormatException(
+      '$path must be square, $_artworkMinSide to $_artworkMaxSide pixels '
+      'a side; it is $width x $height.',
+    );
+  }
+}
+
+/// The pixel size declared by a WebP's first image chunk, or null when
+/// [bytes] are not a WebP.
+(int, int)? _webpSize(List<int> bytes) {
+  String tag(int at) => String.fromCharCodes(bytes.sublist(at, at + 4));
+  int le(int at, int count) {
+    var value = 0;
+    for (var i = count - 1; i >= 0; i--) {
+      value = (value << 8) | bytes[at + i];
+    }
+    return value;
+  }
+
+  if (bytes.length < 30 || tag(0) != 'RIFF' || tag(8) != 'WEBP') return null;
+  switch (tag(12)) {
+    case 'VP8X':
+      return (1 + le(24, 3), 1 + le(27, 3));
+    case 'VP8L':
+      final bits = le(21, 4);
+      return (1 + (bits & 0x3FFF), 1 + ((bits >> 14) & 0x3FFF));
+    case 'VP8 ':
+      return (le(26, 2) & 0x3FFF, le(28, 2) & 0x3FFF);
+  }
+  return null;
 }
 
 int _nextRevision(File file, List<Map<String, Object?>> tracks) {

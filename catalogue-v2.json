@@ -1,9 +1,9 @@
 {
   "defaultSection": "motivation",
   "downloadBase": "https://raw.githubusercontent.com/neuratim/moodlo-music/main",
-  "generatedAt": "2026-10-09T09:41:58.651904Z",
+  "generatedAt": "2026-10-19T09:58:42.175894Z",
   "licence": "CC0 1.0 Universal (public domain). Composed for NeuraTiM with generative AI. No attribution required.",
-  "revision": 6,
+  "revision": 7,
   "schema": 2,
   "sections": [
     {
@@ -55,6 +55,11 @@
   ],
   "tracks": [
     {
+      "artwork": {
+        "bytes": 48432,
+        "path": "artwork/m000.webp",
+        "sha256": "3931c1152d38e4dba519406d8905ae6e7ca1aaf28f9d0e74547c06b9ce042ddb"
+      },
       "id": "m000",
       "lengthSeconds": 217,
       "moods": [
@@ -77,6 +82,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 38092,
+        "path": "artwork/m001.webp",
+        "sha256": "bb798f8076a4fa9872e0c08e3dadc94ae05a48738e6921035b746496227a7da2"
+      },
       "id": "m001",
       "lengthSeconds": 195,
       "moods": [
@@ -109,6 +119,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 30416,
+        "path": "artwork/m002.webp",
+        "sha256": "1a8f015238a7baccbdd45b6340b5045e5c3c9502c1226ea3d864186a44465e45"
+      },
       "id": "m002",
       "lengthSeconds": 160,
       "moods": [
@@ -141,6 +156,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 34656,
+        "path": "artwork/m003.webp",
+        "sha256": "503a153f363f33abd92cc70ccdfafc3f11d910e25724a3b34e6389ac0cdc0faa"
+      },
       "id": "m003",
       "lengthSeconds": 174,
       "moods": [
@@ -173,6 +193,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 29698,
+        "path": "artwork/m004.webp",
+        "sha256": "e853a860884da4aa28655f4a063412b74c82224d9e82285176570bdcf63b3e08"
+      },
       "id": "m004",
       "lengthSeconds": 165,
       "moods": [
@@ -205,6 +230,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 50656,
+        "path": "artwork/m005.webp",
+        "sha256": "6cfee24075a19754fcdf483beb004a71189057bf40415be06b9b8fecba2c1ced"
+      },
       "id": "m005",
       "lengthSeconds": 195,
       "moods": [
@@ -237,6 +267,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 43788,
+        "path": "artwork/m006.webp",
+        "sha256": "8a44023634c3b37e43b492b989bf7341585f0359aa337b776b1c77911f08b36e"
+      },
       "id": "m006",
       "lengthSeconds": 170,
       "moods": [
@@ -269,6 +304,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 33636,
+        "path": "artwork/m007.webp",
+        "sha256": "8b79678ecfda6846d705fde5b3df0ace9e294e890066c49177b8829d0ff4ea9a"
+      },
       "id": "m007",
       "lengthSeconds": 180,
       "moods": [
@@ -301,6 +341,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 36272,
+        "path": "artwork/m008.webp",
+        "sha256": "ce041c341224eac748bbe8003a34e7f302b8cabab3665804d046ad77cbac97f2"
+      },
       "id": "m008",
       "lengthSeconds": 180,
       "moods": [
@@ -333,6 +378,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 41808,
+        "path": "artwork/m009.webp",
+        "sha256": "1a0d079cebb226cdf4db8887df567fbd38850da426c2c361432ed9dc2b806ba7"
+      },
       "id": "m009",
       "lengthSeconds": 180,
       "moods": [
@@ -365,6 +415,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 47384,
+        "path": "artwork/m010.webp",
+        "sha256": "1f017f2f3d3c4e662185097e70a363742c3e1fd7acb8a2c5a932b4fa153d8fe6"
+      },
       "id": "m010",
       "lengthSeconds": 190,
       "moods": [
@@ -397,6 +452,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 29520,
+        "path": "artwork/m011.webp",
+        "sha256": "f42f623638231b54b40b27d68f9c230c6875a8b31aef8296fb19bd81b26aaf81"
+      },
       "id": "m011",
       "lengthSeconds": 199,
       "moods": [
@@ -429,6 +489,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 52886,
+        "path": "artwork/m012.webp",
+        "sha256": "1c4233989ed72f85488f2c5e7df49d9b6ae9e6764f44f4cb2033775f5fc60a0b"
+      },
       "id": "m012",
       "lengthSeconds": 200,
       "moods": [
@@ -461,6 +526,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 46272,
+        "path": "artwork/m013.webp",
+        "sha256": "2e545ccb0a27cb5e4398723746f1be40fb970f860218ec9d93e9539b479ad463"
+      },
       "id": "m013",
       "lengthSeconds": 170,
       "moods": [
@@ -493,6 +563,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 43090,
+        "path": "artwork/m014.webp",
+        "sha256": "df4bc525eed83c3579b74d4ec3ac7ebdcf76018ea7c88e85d0f21c883067f935"
+      },
       "id": "m014",
       "lengthSeconds": 185,
       "moods": [
@@ -525,6 +600,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 44936,
+        "path": "artwork/m015.webp",
+        "sha256": "d4c0ad29996a0f24d514ea634fc37fc5afadeaaf0b8889a7aa4fc85dac0b9085"
+      },
       "id": "m015",
       "lengthSeconds": 185,
       "moods": [
@@ -557,6 +637,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 45232,
+        "path": "artwork/m016.webp",
+        "sha256": "577a0089eec9225d81c744368921adf7833d0287873ba0de7ab0be3544b69e6f"
+      },
       "id": "m016",
       "lengthSeconds": 166,
       "moods": [
@@ -589,6 +674,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 41942,
+        "path": "artwork/m017.webp",
+        "sha256": "d2272cd0dd0e394dd1f626103e57021925c6739b4026bd955e790738716a7348"
+      },
       "id": "m017",
       "lengthSeconds": 177,
       "moods": [
@@ -621,6 +711,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 47462,
+        "path": "artwork/m018.webp",
+        "sha256": "34c26832ae1ade7a2e52eb1efdc32a4d3c615f1ca08a71c86c9d0314e2e2f65d"
+      },
       "id": "m018",
       "lengthSeconds": 189,
       "moods": [
@@ -653,6 +748,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 42496,
+        "path": "artwork/m019.webp",
+        "sha256": "914fde70f0d8f263a8af25914671102fc567773136cc2eaca8c6be73587ba956"
+      },
       "id": "m019",
       "lengthSeconds": 205,
       "moods": [
@@ -685,6 +785,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 43488,
+        "path": "artwork/m020.webp",
+        "sha256": "bf9a17e7a91f3cb0deebc41610c956bc05f992264ebd7132ee4347c9dedf6b36"
+      },
       "id": "m020",
       "lengthSeconds": 190,
       "moods": [
@@ -717,6 +822,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 42340,
+        "path": "artwork/m021.webp",
+        "sha256": "3298a913fc5fc255027f6dd6a123df8e54380e0d908fbe4f86135e0a0ecb01de"
+      },
       "id": "m021",
       "lengthSeconds": 217,
       "moods": [
@@ -749,6 +859,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 32140,
+        "path": "artwork/m022.webp",
+        "sha256": "d4dbe28311bf23f64c50557510558eb1d826448e31955072cc0224ac6ebd54ab"
+      },
       "id": "m022",
       "lengthSeconds": 210,
       "moods": [
@@ -781,6 +896,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 44290,
+        "path": "artwork/m023.webp",
+        "sha256": "961a4ad7a3fe925d2ad4e813843bc630805724ce97f98c3829b251d87e8f90c2"
+      },
       "id": "m023",
       "lengthSeconds": 175,
       "moods": [
@@ -813,6 +933,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 47648,
+        "path": "artwork/m024.webp",
+        "sha256": "162fbada8fd7274b9f03f36be5720a3d28b0e91fad37a55b0ca3e44ab8a0dc88"
+      },
       "id": "m024",
       "lengthSeconds": 189,
       "moods": [
@@ -845,6 +970,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 36376,
+        "path": "artwork/m025.webp",
+        "sha256": "13596f3904c47e3734674523946a6fcdf799096d7ceaa8144ab97290a050a34d"
+      },
       "id": "m025",
       "lengthSeconds": 175,
       "moods": [
@@ -877,6 +1007,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 35458,
+        "path": "artwork/m101.webp",
+        "sha256": "50205ea1bd2d3ccf052879eb27847ca20a644a2b0872d092990c48592760df0e"
+      },
       "id": "m101",
       "lengthSeconds": 223,
       "moods": [
@@ -909,6 +1044,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 49664,
+        "path": "artwork/m102.webp",
+        "sha256": "77edc60b860abc2a33edb72f3415155825fbb07f186aea3be6205ad2d02d2c0e"
+      },
       "id": "m102",
       "lengthSeconds": 170,
       "moods": [
@@ -941,6 +1081,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 39184,
+        "path": "artwork/m103.webp",
+        "sha256": "29a295813d8135c7d3f7746e7ac82ecb2515b97a4dd224d3b8daa5fb5ec1fec8"
+      },
       "id": "m103",
       "lengthSeconds": 188,
       "moods": [
@@ -973,6 +1118,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 52462,
+        "path": "artwork/m104.webp",
+        "sha256": "0a9dc233ce8b43594294877b85373c0ba29b2016a5eb34f2ade2095ef52854f7"
+      },
       "id": "m104",
       "lengthSeconds": 214,
       "moods": [
@@ -1005,6 +1155,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 50186,
+        "path": "artwork/m105.webp",
+        "sha256": "5d42cb957fd476dc51a7770da53f430d09d2a4f397f5b2fdb2765b977008897a"
+      },
       "id": "m105",
       "lengthSeconds": 241,
       "moods": [
@@ -1037,6 +1192,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 50418,
+        "path": "artwork/m106.webp",
+        "sha256": "30f4448c1920d2bd117c7cd6e7500388b2c631c1d7efd778c21c853bf0cf3211"
+      },
       "id": "m106",
       "lengthSeconds": 192,
       "moods": [
@@ -1069,6 +1229,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 50104,
+        "path": "artwork/m107.webp",
+        "sha256": "136eb1df27ea33355ca3879a22349088873581b151f79bffb84886f279c2b35e"
+      },
       "id": "m107",
       "lengthSeconds": 179,
       "moods": [
@@ -1101,6 +1266,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 32992,
+        "path": "artwork/m108.webp",
+        "sha256": "6fb79142da68bdad5c5e74e3cf53e1d8d8f306405ea35c1962924a993129a513"
+      },
       "id": "m108",
       "lengthSeconds": 201,
       "moods": [
@@ -1133,6 +1303,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 47988,
+        "path": "artwork/m109.webp",
+        "sha256": "20abeef2a4809f1c27c352422b3a0832330e131978f90882e3f2b472679f54f6"
+      },
       "id": "m109",
       "lengthSeconds": 141,
       "moods": [
@@ -1165,6 +1340,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 35436,
+        "path": "artwork/m110.webp",
+        "sha256": "4094e232c7f2eda3d88c243409c010be61cc14bb745e08298bc4356e8d15f5e6"
+      },
       "id": "m110",
       "lengthSeconds": 222,
       "moods": [
@@ -1197,6 +1377,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 46822,
+        "path": "artwork/m111.webp",
+        "sha256": "5d19f741fe0c9087a256e4b4ca87c9db609c1154455a5d6dbe29bb830d6dcb7d"
+      },
       "id": "m111",
       "lengthSeconds": 196,
       "moods": [
@@ -1229,6 +1414,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 39122,
+        "path": "artwork/m112.webp",
+        "sha256": "a0e57f25238d3f743c865a6848dec4898f10e99ef953c96ddae298e482eaba05"
+      },
       "id": "m112",
       "lengthSeconds": 133,
       "moods": [
@@ -1261,6 +1451,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 35366,
+        "path": "artwork/m113.webp",
+        "sha256": "5d32c55b02b122f0128133a2a6ffa8087de550291eb2280831655f5b8ce59503"
+      },
       "id": "m113",
       "lengthSeconds": 188,
       "moods": [
@@ -1293,6 +1488,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 49256,
+        "path": "artwork/m114.webp",
+        "sha256": "0481f7a8e2efb0d3c031a5bfbb9cb42d77933696fd6d348b0874283f38685c33"
+      },
       "id": "m114",
       "lengthSeconds": 239,
       "moods": [
@@ -1325,6 +1525,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 48114,
+        "path": "artwork/m115.webp",
+        "sha256": "f4470f8fbda056f87e1f94b7e2a376d472482c5ad71bcc91b4186561743d5522"
+      },
       "id": "m115",
       "lengthSeconds": 268,
       "moods": [
@@ -1357,6 +1562,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 50014,
+        "path": "artwork/m116.webp",
+        "sha256": "dde93cf31cb6b28dd73b64c64c4d049109d8aab041f66a36156e6234efe563d8"
+      },
       "id": "m116",
       "lengthSeconds": 182,
       "moods": [
@@ -1389,6 +1599,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 40322,
+        "path": "artwork/m117.webp",
+        "sha256": "08d369f7c0b59faee8aa5d3e14ac941e1f31b791de93d1bff21643b20ffd2277"
+      },
       "id": "m117",
       "lengthSeconds": 201,
       "moods": [
@@ -1421,6 +1636,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 43924,
+        "path": "artwork/m118.webp",
+        "sha256": "a8581f5e3fac16dbfa862c6bceb852babb19718a271a9251a251fcc354f941ff"
+      },
       "id": "m118",
       "lengthSeconds": 199,
       "moods": [
@@ -1453,6 +1673,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 44108,
+        "path": "artwork/m119.webp",
+        "sha256": "36f9711336d16bfe31d93d6291026cc3eec6d1741859444e06318ac6bea4c3b3"
+      },
       "id": "m119",
       "lengthSeconds": 170,
       "moods": [
@@ -1485,6 +1710,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 23460,
+        "path": "artwork/m120.webp",
+        "sha256": "ed6ace1676f2b0568d70281bb4b067984c192ba7e8db573fa65514cff426850e"
+      },
       "id": "m120",
       "lengthSeconds": 240,
       "moods": [
@@ -1517,6 +1747,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 41502,
+        "path": "artwork/m121.webp",
+        "sha256": "9238e102ce8eaf6c941ac0f35fa8a88d6f81953e97e387f7a90206202261b01e"
+      },
       "id": "m121",
       "lengthSeconds": 153,
       "moods": [
@@ -1549,6 +1784,11 @@
       ]
     },
     {
+      "artwork": {
+        "bytes": 40220,
+        "path": "artwork/m122.webp",
+        "sha256": "8bf226228a7babe1e0e8cd22e7dff397469f299f0802a38bd2fa03cfc8871254"
+      },
       "id": "m122",
       "lengthSeconds": 142,
       "moods": [
@@ -1582,6 +1822,11 @@
     },
     {
       "age": "0-3",
+      "artwork": {
+        "bytes": 39950,
+        "path": "artwork/001.webp",
+        "sha256": "325a5b61823d97c31446d4a66aa41257f5f1adcd014a340c87c3a7c20fea1549"
+      },
       "bpm": 72,
       "content": "all-ages-clean",
       "energy": 1,
@@ -1621,6 +1866,11 @@
     },
     {
       "age": "0-3",
+      "artwork": {
+        "bytes": 21906,
+        "path": "artwork/002.webp",
+        "sha256": "f2ba4d1ff7f8d03efcfe7893c01aec6a73c6b7b660a08b7ff460d9cb9bac0bac"
+      },
       "bpm": 84,
       "content": "all-ages-clean",
       "energy": 1,
@@ -1660,6 +1910,11 @@
     },
     {
       "age": "0-3",
+      "artwork": {
+        "bytes": 29516,
+        "path": "artwork/003.webp",
+        "sha256": "fdbfcb6b23f4a95f43da9071af9a52d234317592ab26a73af2efa5216398e81c"
+      },
       "bpm": 92,
       "content": "all-ages-clean",
       "energy": 2,
@@ -1699,6 +1954,11 @@
     },
     {
       "age": "0-3",
+      "artwork": {
+        "bytes": 32578,
+        "path": "artwork/004.webp",
+        "sha256": "d7b7cc0900600bbcf9ff028c2595b19a32f8d259bac5cf7f70bd73e4071dd1bc"
+      },
       "bpm": 64,
       "content": "all-ages-clean",
       "energy": 1,
@@ -1738,6 +1998,11 @@
     },
     {
       "age": "0-3",
+      "artwork": {
+        "bytes": 33588,
+        "path": "artwork/005.webp",
+        "sha256": "5a4add63530fc238f871584e77cb757ce676a6efcc2b8eaf3857870bf11e9ef8"
+      },
       "bpm": 80,
       "content": "all-ages-clean",
       "energy": 1,
@@ -1777,6 +2042,11 @@
     },
     {
       "age": "0-3",
+      "artwork": {
+        "bytes": 29486,
+        "path": "artwork/006.webp",
+        "sha256": "1b0861cea49fd405278f2e79ed9c11ff5c833fc7bb9594b21970a76150fdf708"
+      },
       "bpm": 96,
       "content": "all-ages-clean",
       "energy": 2,
@@ -1816,6 +2086,11 @@
     },
     {
       "age": "0-3",
+      "artwork": {
+        "bytes": 21876,
+        "path": "artwork/007.webp",
+        "sha256": "211eee2db77b24ec9ddadbd9a57afde0906ef4a82ac4b3240a9eff599cac6c1f"
+      },
       "bpm": 60,
       "content": "all-ages-clean",
       "energy": 1,
@@ -1855,6 +2130,11 @@
     },
     {
       "age": "0-3",
+      "artwork": {
+        "bytes": 37244,
+        "path": "artwork/008.webp",
+        "sha256": "f39519171b2afd2a0567430ea8a134e7fb54252ff6677e75fdaf5052eacc65b3"
+      },
       "bpm": 88,
       "content": "all-ages-clean",
       "energy": 2,
@@ -1894,6 +2174,11 @@
     },
     {
       "age": "0-3",
+      "artwork": {
+        "bytes": 38026,
+        "path": "artwork/009.webp",
+        "sha256": "06bf33f4f0af75245a334e68b52ea9606d72aa007711ec36a0987d328d8fa2d7"
+      },
       "bpm": 76,
       "content": "all-ages-clean",
       "energy": 1,
@@ -1933,6 +2218,11 @@
     },
     {
       "age": "0-3",
+      "artwork": {
+        "bytes": 29918,
+        "path": "artwork/010.webp",
+        "sha256": "0bad176d14a9aa53ec620d476c88beb03ab337c97d6611e9e1053965094d57e5"
+      },
       "bpm": 68,
       "content": "all-ages-clean",
       "energy": 1,
@@ -1972,6 +2262,11 @@
     },
     {
       "age": "4-7",
+      "artwork": {
+        "bytes": 28344,
+        "path": "artwork/011.webp",
+        "sha256": "c766102bc30c330db8b2b6383c1e7d2db552e46f842869ce2add33a9521fb01f"
+      },
       "bpm": 104,
       "content": "all-ages-clean",
       "energy": 3,
@@ -2011,6 +2306,11 @@
     },
     {
       "age": "4-7",
+      "artwork": {
+        "bytes": 40648,
+        "path": "artwork/013.webp",
+        "sha256": "fdf031f5e0cf7cd1a70027e312d98a332eea7797b7f598b46c10925b2ed03046"
+      },
       "bpm": 98,
       "content": "all-ages-clean",
       "energy": 3,
@@ -2050,6 +2350,11 @@
     },
     {
       "age": "4-7",
+      "artwork": {
+        "bytes": 41652,
+        "path": "artwork/015.webp",
+        "sha256": "6546f7800cf7e6d4dd3ef0cc7412adb28848e28051a4958b6108070b065dddbc"
+      },
       "bpm": 100,
       "content": "all-ages-clean",
       "energy": 2,
@@ -2089,6 +2394,11 @@
     },
     {
       "age": "4-7",
+      "artwork": {
+        "bytes": 22188,
+        "path": "artwork/016.webp",
+        "sha256": "6586cd2adb6dc95de831bfe8f5718c16cb331a99c2ee4d7701c5b5c66db3cda0"
+      },
       "bpm": 94,
       "content": "all-ages-clean",
       "energy": 2,
@@ -2128,6 +2438,11 @@
     },
     {
       "age": "4-7",
+      "artwork": {
+        "bytes": 43684,
+        "path": "artwork/017.webp",
+        "sha256": "7836982bc9318298febe2136b639f6578dd5df58f6ee4c9829e624ff20d71522"
+      },
       "bpm": 108,
       "content": "all-ages-clean",
       "energy": 2,
@@ -2167,6 +2482,11 @@
     },
     {
       "age": "4-7",
+      "artwork": {
+        "bytes": 30890,
+        "path": "artwork/018.webp",
+        "sha256": "f0761e25d975136d8abe5cdedcb4a68a4a5a2ceba7878a9ac60b4200ab66e22a"
+      },
       "bpm": 110,
       "content": "all-ages-clean",
       "energy": 3,
@@ -2206,6 +2526,11 @@
     },
     {
       "age": "4-7",
+      "artwork": {
+        "bytes": 32268,
+        "path": "artwork/019.webp",
+        "sha256": "9d5a74a50d3f231e9cf5bee283816c747580762c331eca63972ed9bfe7eca545"
+      },
       "bpm": 116,
       "content": "all-ages-clean",
       "energy": 3,
@@ -2245,6 +2570,11 @@
     },
     {
       "age": "4-7",
+      "artwork": {
+        "bytes": 41760,
+        "path": "artwork/020.webp",
+        "sha256": "11cb1ebc66b70f7df8b521acf8b431764c2de557b82c0b65f661c71ef82fa963"
+      },
       "bpm": 102,
       "content": "all-ages-clean",
       "energy": 2,
@@ -2284,6 +2614,11 @@
     },
     {
       "age": "8-12",
+      "artwork": {
+        "bytes": 34012,
+        "path": "artwork/021.webp",
+        "sha256": "0cb99acd92a223c174c61d5b1d4883402408ad867590b1875ef211d3da7446a0"
+      },
       "bpm": 148,
       "content": "all-ages-clean",
       "energy": 4,
@@ -2323,6 +2658,11 @@
     },
     {
       "age": "8-12",
+      "artwork": {
+        "bytes": 52720,
+        "path": "artwork/022.webp",
+        "sha256": "b215ca19980296e04c4b220d9e69e73cad693f772bd2fd61fdb9fb8a43f2d24d"
+      },
       "bpm": 82,
       "content": "all-ages-clean",
       "energy": 2,
@@ -2362,6 +2702,11 @@
     },
     {
       "age": "8-12",
+      "artwork": {
+        "bytes": 26512,
+        "path": "artwork/023.webp",
+        "sha256": "ad3b040b47847a7656cb196dac3cd6cd9527968d6e81ba734d5ffaaa5900aa1d"
+      },
       "bpm": 124,
       "content": "all-ages-clean",
       "energy": 3,
@@ -2401,6 +2746,11 @@
     },
     {
       "age": "8-12",
+      "artwork": {
+        "bytes": 44244,
+        "path": "artwork/024.webp",
+        "sha256": "87b9938a14d893c7d0b9597ce0042b026a764d857a7eff59502ba10f868f77e3"
+      },
       "bpm": 116,
       "content": "all-ages-clean",
       "energy": 4,
@@ -2440,6 +2790,11 @@
     },
     {
       "age": "8-12",
+      "artwork": {
+        "bytes": 42320,
+        "path": "artwork/025.webp",
+        "sha256": "11fc7358ab90d6e2af2e2dec90dac4b3610c3d36e2d7ca81524393d689b8d267"
+      },
       "bpm": 112,
       "content": "all-ages-clean",
       "energy": 3,
@@ -2479,6 +2834,11 @@
     },
     {
       "age": "8-12",
+      "artwork": {
+        "bytes": 41930,
+        "path": "artwork/026.webp",
+        "sha256": "ee06f8c8be0357d0b2f8a9daec80537e9714fac905a38044d98e0c1020318aa0"
+      },
       "bpm": 136,
       "content": "all-ages-clean",
       "energy": 4,
@@ -2518,6 +2878,11 @@
     },
     {
       "age": "8-12",
+      "artwork": {
+        "bytes": 48232,
+        "path": "artwork/027.webp",
+        "sha256": "47a14c446bb8005d0c095426568dc0bb05af775d60167adac26e781ec175250c"
+      },
       "bpm": 116,
       "content": "all-ages-clean",
       "energy": 3,
@@ -2557,6 +2922,11 @@
     },
     {
       "age": "8-12",
+      "artwork": {
+        "bytes": 36914,
+        "path": "artwork/028.webp",
+        "sha256": "b45ce96e938aa937e95e2e2534c50b10ac83e42c11e73bbc66e6f7e2aa110beb"
+      },
       "bpm": 98,
       "content": "all-ages-clean",
       "energy": 3,
@@ -2596,6 +2966,11 @@
     },
     {
       "age": "8-12",
+      "artwork": {
+        "bytes": 47546,
+        "path": "artwork/029.webp",
+        "sha256": "84166a12bba400a46badd31d5a064fd3b06d610d11990da9abe696a1bff7a919"
+      },
       "bpm": 118,
       "content": "all-ages-clean",
       "energy": 3,
@@ -2635,6 +3010,11 @@
     },
     {
       "age": "8-12",
+      "artwork": {
+        "bytes": 40772,
+        "path": "artwork/030.webp",
+        "sha256": "48cff010816935796a6cb075085ef9848f5e57ddf0a5b7457b08cddae336ffde"
+      },
       "bpm": 122,
       "content": "all-ages-clean",
       "energy": 3,
@@ -2674,6 +3054,11 @@
     },
     {
       "age": "13-17",
+      "artwork": {
+        "bytes": 32514,
+        "path": "artwork/031.webp",
+        "sha256": "479e6f0d2430d874d93a20dd411b3e69c31fbb8d28bad07d82cdb7cdbf5905da"
+      },
       "bpm": 96,
       "content": "all-ages-clean",
       "energy": 2,
@@ -2713,6 +3098,11 @@
     },
     {
       "age": "13-17",
+      "artwork": {
+        "bytes": 46310,
+        "path": "artwork/032.webp",
+        "sha256": "c640f185a43201c45d151e44355b3be62a46c9b410a4c1863574518b5dc700de"
+      },
       "bpm": 132,
       "content": "all-ages-clean",
       "energy": 3,
@@ -2752,6 +3142,11 @@
     },
     {
       "age": "13-17",
+      "artwork": {
+        "bytes": 51094,
+        "path": "artwork/033.webp",
+        "sha256": "f1fdf2beb14c18ee34a45366f9a1ca73cca10b9c6cf881ea9bd5aca56f180e01"
+      },
       "bpm": 138,
       "content": "all-ages-clean",
       "energy": 4,
@@ -2791,6 +3186,11 @@
     },
     {
       "age": "13-17",
+      "artwork": {
+        "bytes": 35686,
+        "path": "artwork/034.webp",
+        "sha256": "987edea088253ea405b8f4653915201c7d2773a028905aeadd0cf7e217c23878"
+      },
       "bpm": 120,
       "content": "all-ages-clean",
       "energy": 3,
@@ -2830,6 +3230,11 @@
     },
     {
       "age": "13-17",
+      "artwork": {
+        "bytes": 31994,
+        "path": "artwork/035.webp",
+        "sha256": "76922a2401e1ed225ec2e220534b3ed3858ce356601f3d9decb54340cceec29b"
+      },
       "bpm": 86,
       "content": "all-ages-clean",
       "energy": 2,
@@ -2869,6 +3274,11 @@
     },
     {
       "age": "13-17",
+      "artwork": {
+        "bytes": 44100,
+        "path": "artwork/036.webp",
+        "sha256": "10ee2fd26787bf55bdd7b7773148b8ae4649f3a9cc8da76dcbe384970b5c02fd"
+      },
       "bpm": 166,
       "content": "all-ages-clean",
       "energy": 4,
@@ -2908,6 +3318,11 @@
     },
     {
       "age": "13-17",
+      "artwork": {
+        "bytes": 34492,
+        "path": "artwork/037.webp",
+        "sha256": "ec0dc51ca41496359082686accc5760cfa69092317db72008a0c9df4fd1e76b8"
+      },
       "bpm": 88,
       "content": "all-ages-clean",
       "energy": 2,
@@ -2947,6 +3362,11 @@
     },
     {
       "age": "13-17",
+      "artwork": {
+        "bytes": 41668,
+        "path": "artwork/038.webp",
+        "sha256": "acac719806391d78744c81f69a0901bccb2e2728b29d22d309bbbc4bfe82cb74"
+      },
       "bpm": 114,
       "content": "all-ages-clean",
       "energy": 3,
@@ -2986,6 +3406,11 @@
     },
     {
       "age": "13-17",
+      "artwork": {
+        "bytes": 38252,
+        "path": "artwork/039.webp",
+        "sha256": "2f94c44ad2992bd55571c98e38dfe0c8c1040b5b59e9a15ef190335646af34b1"
+      },
       "bpm": 94,
       "content": "all-ages-clean",
       "energy": 3,
@@ -3025,6 +3450,11 @@
     },
     {
       "age": "13-17",
+      "artwork": {
+        "bytes": 35998,
+        "path": "artwork/040.webp",
+        "sha256": "3f03f21b264127a4332af80270c1bee3c50c1d5ccfdd37a871f72367e16a0636"
+      },
       "bpm": 126,
       "content": "all-ages-clean",
       "energy": 3,
@@ -3064,6 +3494,11 @@
     },
     {
       "age": "18-29",
+      "artwork": {
+        "bytes": 49922,
+        "path": "artwork/041.webp",
+        "sha256": "d1be567baec0d77ca27044bd37e4cac35245d8f649ef599dabf4b47ea9898d3b"
+      },
       "bpm": 116,
       "content": "all-ages-clean",
       "energy": 3,
@@ -3103,6 +3538,11 @@
     },
     {
       "age": "18-29",
+      "artwork": {
+        "bytes": 34306,
+        "path": "artwork/042.webp",
+        "sha256": "caed3492b34f30c1e997ad74b81b95f0e29adf28a939ee748234b7bfc7a0ced2"
+      },
       "bpm": 124,
       "content": "all-ages-clean",
       "energy": 4,
@@ -3142,6 +3582,11 @@
     },
     {
       "age": "18-29",
+      "artwork": {
+        "bytes": 43796,
+        "path": "artwork/043.webp",
+        "sha256": "50c798db3b9cb8df895ac1a8b76d57bda83e21dc4e55b38eb157a3c1d2b9718f"
+      },
       "bpm": 110,
       "content": "all-ages-clean",
       "energy": 3,
@@ -3181,6 +3626,11 @@
     },
     {
       "age": "18-29",
+      "artwork": {
+        "bytes": 35378,
+        "path": "artwork/044.webp",
+        "sha256": "f514a62cc1df9bf48c0c9f8631ec68931696f4d6c9d3132b931fc2cd2c9a8688"
+      },
       "bpm": 104,
       "content": "all-ages-clean",
       "energy": 2,
@@ -3220,6 +3670,11 @@
     },
     {
       "age": "18-29",
+      "artwork": {
+        "bytes": 51224,
+        "path": "artwork/045.webp",
+        "sha256": "e7aae7c735f31aa7e12c6833136a9d6625794c41e5f6cc6bae37a04c97482d95"
+      },
       "bpm": 118,
       "content": "all-ages-clean",
       "energy": 4,
@@ -3259,6 +3714,11 @@
     },
     {
       "age": "18-29",
+      "artwork": {
+        "bytes": 33700,
+        "path": "artwork/046.webp",
+        "sha256": "54d5eb2aa3ff5101fd02c92046dc9210de0aa359cb5cceb3c3da72a093826f71"
+      },
       "bpm": 82,
       "content": "all-ages-clean",
       "energy": 2,
@@ -3298,6 +3758,11 @@
     },
     {
       "age": "18-29",
+      "artwork": {
+        "bytes": 48826,
+        "path": "artwork/047.webp",
+        "sha256": "5b4887f7ce197fc8a129c828b700defee97fcb79861c47c003b55661b8525e74"
+      },
       "bpm": 108,
       "content": "all-ages-clean",
       "energy": 3,
@@ -3337,6 +3802,11 @@
     },
     {
       "age": "18-29",
+      "artwork": {
+        "bytes": 19136,
+        "path": "artwork/048.webp",
+        "sha256": "7fb6325fb1fe12247ff2e57e15b31b6d7f44c725b1a9a96d845a232f47f1d277"
+      },
       "bpm": 102,
       "content": "all-ages-clean",
       "energy": 2,
@@ -3376,6 +3846,11 @@
     },
     {
       "age": "18-29",
+      "artwork": {
+        "bytes": 45084,
+        "path": "artwork/049.webp",
+        "sha256": "95e763da35470d8b76305f6626f55cf8854947014b897536b814f61acaa80fa1"
+      },
       "bpm": 102,
       "content": "all-ages-clean",
       "energy": 3,
@@ -3415,6 +3890,11 @@
     },
     {
       "age": "18-29",
+      "artwork": {
+        "bytes": 32858,
+        "path": "artwork/050.webp",
+        "sha256": "f3338d51debfc5f358d3fe768ba43aca228d46c80f7e221bc996668d9f2fbf71"
+      },
       "bpm": 122,
       "content": "all-ages-clean",
       "energy": 4,
@@ -3454,6 +3934,11 @@
     },
     {
       "age": "30-44",
+      "artwork": {
+        "bytes": 33736,
+        "path": "artwork/051.webp",
+        "sha256": "6547b07d2dbdfb157c3cf3f1337db646f01154f7ae73c0487fd9eb82c5c010a0"
+      },
       "bpm": 96,
       "content": "all-ages-clean",
       "energy": 2,
@@ -3493,6 +3978,11 @@
     },
     {
       "age": "30-44",
+      "artwork": {
+        "bytes": 29944,
+        "path": "artwork/052.webp",
+        "sha256": "ea66b749cdb8a35fc6eab4993433ba86ad99ed16ae3066ad9144971b27734456"
+      },
       "bpm": 108,
       "content": "all-ages-clean",
       "energy": 3,
@@ -3532,6 +4022,11 @@
     },
     {
       "age": "30-44",
+      "artwork": {
+        "bytes": 49438,
+        "path": "artwork/053.webp",
+        "sha256": "ef0686fa14b5a87cebe4361568fef4d3127b940266d8b0080daa15689b270919"
+      },
       "bpm": 94,
       "content": "all-ages-clean",
       "energy": 2,
@@ -3571,6 +4066,11 @@
     },
     {
       "age": "30-44",
+      "artwork": {
+        "bytes": 30128,
+        "path": "artwork/054.webp",
+        "sha256": "a6fca3ce6f942ce7dc243768874df703f91696b9f13472ce56134d27f293c2f4"
+      },
       "bpm": 100,
       "content": "all-ages-clean",
       "energy": 2,
@@ -3610,6 +4110,11 @@
     },
     {
       "age": "30-44",
+      "artwork": {
+        "bytes": 32124,
+        "path": "artwork/055.webp",
+        "sha256": "48d5b31402968743183e176ca146da887ddca168506554ad6dc78976d3e6b2c7"
+      },
       "bpm": 112,
       "content": "all-ages-clean",
       "energy": 4,
@@ -3649,6 +4154,11 @@
     },
     {
       "age": "30-44",
+      "artwork": {
+        "bytes": 25570,
+        "path": "artwork/056.webp",
+        "sha256": "4c683590bc6226a7634973122cbf311f4c9d00995f71b5feae77dfa8b3d3fb60"
+      },
       "bpm": 66,
       "content": "all-ages-clean",
       "energy": 1,
@@ -3688,6 +4198,11 @@
     },
     {
       "age": "30-44",
+      "artwork": {
+        "bytes": 29956,
+        "path": "artwork/057.webp",
+        "sha256": "a41f92dc6777537fe9266eef8bd988c1d4afef78dd10bf79a53a2dde37543dfc"
+      },
       "bpm": 118,
       "content": "all-ages-clean",
       "energy": 2,
@@ -3727,6 +4242,11 @@
     },
     {
       "age": "30-44",
+      "artwork": {
+        "bytes": 34130,
+        "path": "artwork/058.webp",
+        "sha256": "b6e6b3ae0ee9333b808bf4bb27c78d1ed1cdfe7db6650284c157f66f3315c0ca"
+      },
       "bpm": 140,
       "content": "all-ages-clean",
       "energy": 4,
@@ -3766,6 +4286,11 @@
     },
     {
       "age": "30-44",
+      "artwork": {
+        "bytes": 43050,
+        "path": "artwork/059.webp",
+        "sha256": "9cf983a9210368bed6461205d4cbeb422070f64ceb65a410de7e74212e5ec1c6"
+      },
       "bpm": 106,
       "content": "all-ages-clean",
       "energy": 3,
@@ -3805,6 +4330,11 @@
     },
     {
       "age": "30-44",
+      "artwork": {
+        "bytes": 33196,
+        "path": "artwork/060.webp",
+        "sha256": "769eee7766e247c6cbf57192ce5c06370aa583481744cb2a6342ab9395700117"
+      },
       "bpm": 98,
       "content": "all-ages-clean",
       "energy": 2,
@@ -3844,6 +4374,11 @@
     },
     {
       "age": "45-59",
+      "artwork": {
+        "bytes": 46026,
+        "path": "artwork/061.webp",
+        "sha256": "8f33a97495a63448ce598d37fc919758b26cae2fa4e958468f4cebfd27537588"
+      },
       "bpm": 104,
       "content": "all-ages-clean",
       "energy": 3,
@@ -3883,6 +4418,11 @@
     },
     {
       "age": "45-59",
+      "artwork": {
+        "bytes": 27494,
+        "path": "artwork/062.webp",
+        "sha256": "25aad550d77e1112a263f237670df0f2e280700c41bb468352194604a1138456"
+      },
       "bpm": 110,
       "content": "all-ages-clean",
       "energy": 3,
@@ -3922,6 +4462,11 @@
     },
     {
       "age": "45-59",
+      "artwork": {
+        "bytes": 25154,
+        "path": "artwork/063.webp",
+        "sha256": "7ea6eb6299a2607e8714285369392ee65fc6aacca9bdcef6f9323318165a53c2"
+      },
       "bpm": 124,
       "content": "all-ages-clean",
       "energy": 3,
@@ -3961,6 +4506,11 @@
     },
     {
       "age": "45-59",
+      "artwork": {
+        "bytes": 55684,
+        "path": "artwork/064.webp",
+        "sha256": "38465fdd8e4113f3c63ccd7d3229363ab7eabe5dee871487497e52c2af1441d0"
+      },
       "bpm": 118,
       "content": "all-ages-clean",
       "energy": 3,
@@ -4000,6 +4550,11 @@
     },
     {
       "age": "45-59",
+      "artwork": {
+        "bytes": 18622,
+        "path": "artwork/065.webp",
+        "sha256": "86ca252afdf26f10064e9c6c487842c9a124d0a1ad02299c8b41609be08afc22"
+      },
       "bpm": 98,
       "content": "all-ages-clean",
       "energy": 3,
@@ -4039,6 +4594,11 @@
     },
     {
       "age": "45-59",
+      "artwork": {
+        "bytes": 30210,
+        "path": "artwork/066.webp",
+        "sha256": "7651fec443a7bd4dbdad35ecfc1a54a24de797ba0f2a3d8536c7aa04dc758b6f"
+      },
       "bpm": 112,
       "content": "all-ages-clean",
       "energy": 3,
@@ -4078,6 +4638,11 @@
     },
     {
       "age": "45-59",
+      "artwork": {
+        "bytes": 48280,
+        "path": "artwork/067.webp",
+        "sha256": "439b4b6ee2e86cb0ddcb600d64712fa770e6340c11557549bee308c67db44d8c"
+      },
       "bpm": 106,
       "content": "all-ages-clean",
       "energy": 3,
@@ -4117,6 +4682,11 @@
     },
     {
       "age": "45-59",
+      "artwork": {
+        "bytes": 51398,
+        "path": "artwork/068.webp",
+        "sha256": "94bdf7c004b4e3a8d98cca83b2c7423e116d3d7186dfde4556c9407f0e7b7e1c"
+      },
       "bpm": 104,
       "content": "all-ages-clean",
       "energy": 3,
@@ -4156,6 +4726,11 @@
     },
     {
       "age": "45-59",
+      "artwork": {
+        "bytes": 35434,
+        "path": "artwork/069.webp",
+        "sha256": "894f21efd3bc84fa1e967b18cdc3d3d21b78d5f13a57a1e6596ec26951f1557b"
+      },
       "bpm": 100,
       "content": "all-ages-clean",
       "energy": 2,
@@ -4195,6 +4770,11 @@
     },
     {
       "age": "45-59",
+      "artwork": {
+        "bytes": 36900,
+        "path": "artwork/070.webp",
+        "sha256": "cf68cc4660faafd402266b6015a1053d73337d48cfebf7608db2581d0f0169f9"
+      },
       "bpm": 122,
       "content": "all-ages-clean",
       "energy": 3,
@@ -4234,6 +4814,11 @@
     },
     {
       "age": "60-74",
+      "artwork": {
+        "bytes": 46068,
+        "path": "artwork/071.webp",
+        "sha256": "4d9ee2b69dfa2874632b0340179e4025422bb4e1bdc9cefab8af4377eeb49cb3"
+      },
       "bpm": 108,
       "content": "all-ages-clean",
       "energy": 3,
@@ -4273,6 +4858,11 @@
     },
     {
       "age": "60-74",
+      "artwork": {
+        "bytes": 35562,
+        "path": "artwork/072.webp",
+        "sha256": "af5ae103ad1439ee26386afeb1655269ea71ff1fd6ec21a815da7281b3d30da8"
+      },
       "bpm": 104,
       "content": "all-ages-clean",
       "energy": 2,
@@ -4312,6 +4902,11 @@
     },
     {
       "age": "60-74",
+      "artwork": {
+        "bytes": 35464,
+        "path": "artwork/073.webp",
+        "sha256": "c32ad158d9273872e0e71011b216a50d9723ed8456e061a0bf056158b24362b4"
+      },
       "bpm": 84,
       "content": "all-ages-clean",
       "energy": 2,
@@ -4351,6 +4946,11 @@
     },
     {
       "age": "60-74",
+      "artwork": {
+        "bytes": 49412,
+        "path": "artwork/074.webp",
+        "sha256": "5ab9532553a06dd35811329980cc1f4c04783d0035aad240d3834ec2969d4909"
+      },
       "bpm": 92,
       "content": "all-ages-clean",
       "energy": 2,
@@ -4390,6 +4990,11 @@
     },
     {
       "age": "60-74",
+      "artwork": {
+        "bytes": 53864,
+        "path": "artwork/075.webp",
+        "sha256": "8b4aaae67c338a2c0eae0ebcebe9e8cc6724d3effc9be08e904a222d8c2868a5"
+      },
       "bpm": 100,
       "content": "all-ages-clean",
       "energy": 3,
@@ -4429,6 +5034,11 @@
     },
     {
       "age": "60-74",
+      "artwork": {
+        "bytes": 23946,
+        "path": "artwork/076.webp",
+        "sha256": "1eec79d8c0428c5b186ff53aa25f474ea609a5a9ee99728197dfcb0907024944"
+      },
       "bpm": 114,
       "content": "all-ages-clean",
       "energy": 3,
@@ -4468,6 +5078,11 @@
     },
     {
       "age": "60-74",
+      "artwork": {
+        "bytes": 38692,
+        "path": "artwork/077.webp",
+        "sha256": "5c8b4172bbf812c83dc182d48a5418b08a15c0cfb45025bf686b3c6b65531bf9"
+      },
       "bpm": 104,
       "content": "all-ages-clean",
       "energy": 2,
@@ -4507,6 +5122,11 @@
     },
     {
       "age": "60-74",
+      "artwork": {
+        "bytes": 36456,
+        "path": "artwork/078.webp",
+        "sha256": "4b09736c16ee0a42670c755e9e072cb5a6acd5b4cfe1bdb3655d9baba2b47626"
+      },
       "bpm": 116,
       "content": "all-ages-clean",
       "energy": 3,
@@ -4546,6 +5166,11 @@
     },
     {
       "age": "60-74",
+      "artwork": {
+        "bytes": 37668,
+        "path": "artwork/079.webp",
+        "sha256": "f3fa5cf8be08c1a9550ea81b8691ad574400c196537d672a0b907919051a4795"
+      },
       "bpm": 76,
       "content": "all-ages-clean",
       "energy": 1,
@@ -4585,6 +5210,11 @@
     },
     {
       "age": "60-74",
+      "artwork": {
+        "bytes": 52492,
+        "path": "artwork/080.webp",
+        "sha256": "8ee850ce110d1c0c70b48801778a7f24608c6218def3a9220df3bfe4feff9fcf"
+      },
       "bpm": 110,
       "content": "all-ages-clean",
       "energy": 3,
@@ -4624,6 +5254,11 @@
     },
     {
       "age": "75+",
+      "artwork": {
+        "bytes": 33638,
+        "path": "artwork/082.webp",
+        "sha256": "a069999bba8b3f015f66a838c97ae40bc41345d77083e11265a885c3ff800b39"
+      },
       "bpm": 92,
       "content": "all-ages-clean",
       "energy": 2,
@@ -4663,6 +5298,11 @@
     },
     {
       "age": "75+",
+      "artwork": {
+        "bytes": 36224,
+        "path": "artwork/083.webp",
+        "sha256": "ca51589bfd8f8a1025f90dd264152ee1aa339d3f243b025c8a207e4c74674d6e"
+      },
       "bpm": 90,
       "content": "all-ages-clean",
       "energy": 2,
@@ -4702,6 +5342,11 @@
     },
     {
       "age": "75+",
+      "artwork": {
+        "bytes": 30564,
+        "path": "artwork/084.webp",
+        "sha256": "eb45af3b868a6682a1c1967fdbbf3d6232cdd27c6d3c786be6b8f41dbd8ef18c"
+      },
       "bpm": 84,
       "content": "all-ages-clean",
       "energy": 2,
@@ -4741,6 +5386,11 @@
     },
     {
       "age": "75+",
+      "artwork": {
+        "bytes": 45568,
+        "path": "artwork/085.webp",
+        "sha256": "b6e463fefce3eb607ae670df57a643e32b042f627b8f5f4bfa3fdcdae31fe9e6"
+      },
       "bpm": 102,
       "content": "all-ages-clean",
       "energy": 3,
@@ -4780,6 +5430,11 @@
     },
     {
       "age": "75+",
+      "artwork": {
+        "bytes": 33448,
+        "path": "artwork/086.webp",
+        "sha256": "21a52ef7fd3e5b8b260795bda3b2c8440bc54b66a29b4a90eb6107bd6600b50e"
+      },
       "bpm": 112,
       "content": "all-ages-clean",
       "energy": 3,
@@ -4819,6 +5474,11 @@
     },
     {
       "age": "75+",
+      "artwork": {
+        "bytes": 44926,
+        "path": "artwork/087.webp",
+        "sha256": "fdbf0cc2f63681c1de2af2ffa12a845feda5007fd70de58f087e94d2854baa8d"
+      },
       "bpm": 88,
       "content": "all-ages-clean",
       "energy": 2,
@@ -4858,6 +5518,11 @@
     },
     {
       "age": "75+",
+      "artwork": {
+        "bytes": 43722,
+        "path": "artwork/088.webp",
+        "sha256": "66ba7492b03168d9ea4beeb16652c832b5955681803c7cfdc9cb5c67dcc3dacc"
+      },
       "bpm": 84,
       "content": "all-ages-clean",
       "energy": 1,
@@ -4897,6 +5562,11 @@
     },
     {
       "age": "75+",
+      "artwork": {
+        "bytes": 43180,
+        "path": "artwork/089.webp",
+        "sha256": "63e9f871aa81ddd19e40f951fb3a8c7ac4d41c89a47c969888b4c3a57c933aa4"
+      },
       "bpm": 96,
       "content": "all-ages-clean",
       "energy": 2,
@@ -4936,6 +5606,11 @@
     },
     {
       "age": "75+",
+      "artwork": {
+        "bytes": 41094,
+        "path": "artwork/090.webp",
+        "sha256": "e87cf60141fd3ae0c72da873cb62757995b1df4e990c313bfd52c5bfba1ce272"
+      },
       "bpm": 88,
       "content": "all-ages-clean",
       "energy": 2,
@@ -4975,6 +5650,11 @@
     },
     {
       "age": "All ages",
+      "artwork": {
+        "bytes": 37668,
+        "path": "artwork/091.webp",
+        "sha256": "3c7681ac4f2850e1e5ab6deceba64f2f2bf4749a1a8878c0380d8398b037022e"
+      },
       "bpm": 112,
       "content": "all-ages-clean",
       "energy": 3,
@@ -5014,6 +5694,11 @@
     },
     {
       "age": "All ages",
+      "artwork": {
+        "bytes": 53348,
+        "path": "artwork/092.webp",
+        "sha256": "90abfd08f75fd93f0a9052783b1f50e58ecfe77f212eaa33ed713cb4969c0d60"
+      },
       "bpm": 108,
       "content": "all-ages-clean",
       "energy": 3,
@@ -5053,6 +5738,11 @@
     },
     {
       "age": "All ages",
+      "artwork": {
+        "bytes": 57052,
+        "path": "artwork/093.webp",
+        "sha256": "771b8e1186c3c558c355a4b620c6e04a9ac74aae34c22775516982c8ad316c45"
+      },
       "bpm": 106,
       "content": "all-ages-clean",
       "energy": 3,
@@ -5092,6 +5782,11 @@
     },
     {
       "age": "All ages",
+      "artwork": {
+        "bytes": 31852,
+        "path": "artwork/094.webp",
+        "sha256": "3fe750e21263085940eac8955e15f17de4288bd1c2dcc0b7abbce2d455fc635b"
+      },
       "bpm": 100,
       "content": "all-ages-clean",
       "energy": 2,
@@ -5131,6 +5826,11 @@
     },
     {
       "age": "All ages",
+      "artwork": {
+        "bytes": 37416,
+        "path": "artwork/095.webp",
+        "sha256": "1da7a908a7cc323d6a847671f747be64cf17f87c67206a4079a26e1cf3dad4ca"
+      },
       "bpm": 100,
       "content": "all-ages-clean",
       "energy": 2,
@@ -5170,6 +5870,11 @@
     },
     {
       "age": "All ages",
+      "artwork": {
+        "bytes": 59626,
+        "path": "artwork/096.webp",
+        "sha256": "f25f5e66e08f340105df57b976bc9aff636de0173799991d09196f054acad2ca"
+      },
       "bpm": 104,
       "content": "all-ages-clean",
       "energy": 2,
@@ -5209,6 +5914,11 @@
     },
     {
       "age": "All ages",
+      "artwork": {
+        "bytes": 45150,
+        "path": "artwork/097.webp",
+        "sha256": "a53742df854337650a894a1c6b2d5c5af4d6527763b8e502634b53e6a34f21bb"
+      },
       "bpm": 116,
       "content": "all-ages-clean",
       "energy": 3,
@@ -5248,6 +5958,11 @@
     },
     {
       "age": "All ages",
+      "artwork": {
+        "bytes": 36082,
+        "path": "artwork/098.webp",
+        "sha256": "48b0d0347325fb6965d16f2414618fc44f7c4148e98fef917552dad9ef467b99"
+      },
       "bpm": 118,
       "content": "all-ages-clean",
       "energy": 3,
@@ -5287,6 +6002,11 @@
     },
     {
       "age": "All ages",
+      "artwork": {
+        "bytes": 33328,
+        "path": "artwork/099.webp",
+        "sha256": "7ecf4ac263d9ef2e1830ee2312ca90aa5082318a0894ff504f982a843c724dab"
+      },
       "bpm": 108,
       "content": "all-ages-clean",
       "energy": 2,
@@ -5326,6 +6046,11 @@
     },
     {
       "age": "All ages",
+      "artwork": {
+        "bytes": 42966,
+        "path": "artwork/100.webp",
+        "sha256": "b42c54ae737b21dc8db1ab3ff80dda624119b710d89c8b6b2d02b00b499fbe17"
+      },
       "bpm": 106,
       "content": "all-ages-clean",
       "energy": 3,
