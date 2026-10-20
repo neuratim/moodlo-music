@@ -1,12 +1,16 @@
 {
   "defaultSection": "motivation",
   "downloadBase": "https://raw.githubusercontent.com/neuratim/moodlo-music/main",
-  "generatedAt": "2026-10-19T09:58:42.175894Z",
+  "generatedAt": "2026-10-20T09:26:00.211648Z",
   "licence": "CC0 1.0 Universal (public domain). Composed for NeuraTiM with generative AI. No attribution required.",
-  "revision": 7,
+  "revision": 8,
   "schema": 2,
   "sections": [
     {
+      "featured": [
+        "m000",
+        "m026"
+      ],
       "id": "motivation",
       "localizations": {
         "ar": "تحفيز",
@@ -78,6 +82,28 @@
           "path": "tracks/m000/m000-a.mp3",
           "seconds": 217,
           "sha256": "3ffeb53d4ac70de9c267961cc21d85c2bb4d15c0e9faed623494c53e64da7735"
+        }
+      ]
+    },
+    {
+      "id": "m026",
+      "lengthSeconds": 178,
+      "moods": [
+        "joy",
+        "optimism"
+      ],
+      "section": "motivation",
+      "title": "All Hands Go",
+      "versions": [
+        {
+          "bpm": 120,
+          "bytes": 4350789,
+          "energy": 4,
+          "id": "a",
+          "name": "All Hands Go",
+          "path": "tracks/m026/m026-a.mp3",
+          "seconds": 178,
+          "sha256": "7edc7884f11743440c32eae67a61bca564b33b772182ff015b2b1cb598759d3b"
         }
       ]
     },

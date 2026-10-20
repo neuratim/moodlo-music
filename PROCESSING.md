@@ -14,7 +14,11 @@ section's from the audio.
 
 A new section is one entry in `sections.json`: an id, an intake folder, an id
 prefix, its moods, `"metadata": "measured"` and its name in all 18 app
-languages. `defaultSection` is the one the app opens on.
+languages. `defaultSection` is the one the app opens on. An optional
+`featured` list names the section's tracks shown first, in that order; the
+generator refuses an id that is not one of the section's published tracks or
+appears twice, copies the list to the catalogue's section, and orders the
+section's tracks by it, then by id.
 
 ## Intake contract
 
@@ -89,6 +93,21 @@ revision moves with it.
 
 The files in `tracks/` and the generated JSON are public CC0 assets. The intake
 folders are staging only and must not be the source used by the app.
+
+## “All Hands Go” as the second Motivation track: 2026-10-20
+
+The user asked for frameosu's `tracks/funk/funk__all-hands-go.mp3` as the
+second Motivation track, right after “There’s Room in This Parade”. No
+published render matched its size (4,350,789 bytes) or SHA-256, so it is a new
+composition, `m026`, intaken as `unprocessed/zoo/026-All Hands Go.mp3` with
+frameosu's title. Measured with Python 3.12, numpy 2.5.4 and libsndfile 1.2.2:
+178 seconds, 120 BPM, energy 4/4; the key estimate (D minor) stays unpublished
+as before. The calibration and every earlier measurement were byte-identical
+after the run. Since ids follow the file number, the order comes from
+`"featured": ["m000", "m026"]`. Regeneration kept all 145 earlier tracks
+unchanged and published 146 tracks and 290 renders at revision 8; the copy
+fully decodes with FFmpeg and keeps the source's hash. It has no cover yet, so
+the app shows its placeholder.
 
 ## Standalone Motivation track: 2026-10-09
 

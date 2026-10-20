@@ -19,7 +19,9 @@ composition's cover is `artwork/<id>.webp` (see `PROCESSING.md`).
 that is not available yet. See `PROCESSING.md` for the repeatable intake
 procedure. Published files are CC0 1.0 Universal.
 
-`m000` is the featured first Motivation track, “There’s Room in This Parade”.
+A section can list the tracks it shows first, in order, as `featured` in
+`sections.json`; the rest follow by id. Motivation opens with `m000`, “There’s
+Room in This Parade”, then `m026`, “All Hands Go”.
 Existing track IDs and audio remain unchanged. The app groups alternatives under
 their composition title, labels them Version 1, Version 2, and so on, and shows
 single tracks directly. Device-player artist metadata is always Moodlo.

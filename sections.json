@@ -3,6 +3,10 @@
   "schema": 1,
   "sections": [
     {
+      "featured": [
+        "m000",
+        "m026"
+      ],
       "id": "motivation",
       "intake": "unprocessed/zoo",
       "localizations": {

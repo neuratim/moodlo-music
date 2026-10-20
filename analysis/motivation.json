@@ -671,6 +671,19 @@
       "onsetsPerSecond": 3.339,
       "seconds": 174.01
     },
+    "m026-a": {
+      "bpm": 120,
+      "centroidHz": 2691.0,
+      "energy": 4,
+      "file": "026-All Hands Go.mp3",
+      "key": null,
+      "keyConfidence": 0.873,
+      "keyEstimate": "D minor",
+      "loudnessDb": -15.69,
+      "onsetStrength": 0.04859,
+      "onsetsPerSecond": 3.323,
+      "seconds": 178.14
+    },
     "m101-a": {
       "bpm": 129,
       "centroidHz": 2631.8,

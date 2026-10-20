@@ -16,8 +16,12 @@ class PrepareMusicTests(unittest.TestCase):
         self.temporary = tempfile.TemporaryDirectory(prefix="moodlo-catalogue-test-")
         self.addCleanup(self.temporary.cleanup)
         self.root = Path(self.temporary.name)
-        for name in ("prompt_catalogue.json", "sections.json"):
-            shutil.copyfile(REPOSITORY / name, self.root / name)
+        shutil.copyfile(REPOSITORY / "prompt_catalogue.json", self.root / "prompt_catalogue.json")
+        # The real sections, without the featured order of the real shelf.
+        sections = json.loads((REPOSITORY / "sections.json").read_text("utf-8"))
+        for section in sections["sections"]:
+            section.pop("featured", None)
+        self.write_sections(sections)
         audio = self.root / "fixture.mp3"
         subprocess.run(
             [
@@ -59,6 +63,28 @@ class PrepareMusicTests(unittest.TestCase):
             encoding="utf-8",
         )
 
+    def write_sections(self, sections):
+        (self.root / "sections.json").write_text(json.dumps(sections), encoding="utf-8")
+
+    def feature(self, *track_ids):
+        sections = json.loads((self.root / "sections.json").read_text("utf-8"))
+        sections["sections"][0]["featured"] = list(track_ids)
+        self.write_sections(sections)
+
+    def generate_failing(self):
+        result = subprocess.run(
+            [
+                shutil.which("dart"),
+                f"--packages={REPOSITORY / '.dart_tool/package_config.json'}",
+                str(REPOSITORY / "tool/prepare_music.dart"),
+            ],
+            cwd=self.root,
+            capture_output=True,
+            text=True,
+        )
+        self.assertNotEqual(result.returncode, 0, result.stdout)
+        return result.stdout + result.stderr
+
     def generate(self):
         result = subprocess.run(
             [
@@ -99,6 +125,37 @@ class PrepareMusicTests(unittest.TestCase):
         self.assertEqual(repeated["tracks"], catalogue["tracks"])
         self.assertEqual(repeated["revision"], catalogue["revision"])
         self.assertFalse((self.root / "catalogue.json").exists())
+
+    def test_featured_tracks_lead_their_section_in_the_listed_order(self):
+        intake = self.root / "unprocessed/zoo"
+        for name in ("000-First.mp3", "026-Second.mp3"):
+            (intake / name).write_bytes(self.audio)
+        analysis = self.root / "analysis/motivation.json"
+        measured = json.loads(analysis.read_text("utf-8"))
+        for render in ("m000-a", "m026-a"):
+            measured["renders"][render] = {"bpm": 120, "energy": 3}
+        analysis.write_text(json.dumps(measured), encoding="utf-8")
+        plain = self.generate()
+        self.assertEqual(
+            [row["id"] for row in plain["tracks"]], ["m000", "m001", "m026", "001"]
+        )
+        self.feature("m000", "m026")
+        featured = self.generate()
+        self.assertEqual(
+            [row["id"] for row in featured["tracks"]], ["m000", "m026", "m001", "001"]
+        )
+        self.assertEqual(featured["sections"][0]["featured"], ["m000", "m026"])
+        self.assertNotIn("featured", featured["sections"][1])
+        self.assertEqual(featured["revision"], plain["revision"] + 1)
+        self.assertEqual(self.generate()["revision"], featured["revision"])
+
+    def test_a_featured_id_that_is_not_in_the_section_or_repeats_is_refused(self):
+        self.feature("m404")
+        self.assertIn("m404, which is not one of its tracks", self.generate_failing())
+        self.feature("001")
+        self.assertIn("001, which is not one of its tracks", self.generate_failing())
+        self.feature("m001", "m001")
+        self.assertIn("m001 is featured twice", self.generate_failing())
 
     def test_obsolete_catalogue_is_not_read_or_overwritten(self):
         obsolete = self.root / "catalogue.json"

@@ -228,13 +228,40 @@ Future<void> main() async {
       }
     }
   }
+  // A section may name the tracks it lists first, in that order (`featured`
+  // in sections.json); the rest follow by id.
+  final featured = <String, int>{};
+  for (final section in sections) {
+    final names = section['featured'];
+    if (names == null) continue;
+    if (names is! List || names.any((name) => name is! String)) {
+      throw StateError(
+        '${section['id']} featured must be a list of track ids.',
+      );
+    }
+    for (final (index, name) in names.cast<String>().indexed) {
+      if (tracks[name]?['section'] != section['id']) {
+        throw StateError(
+          '${section['id']} features $name, which is not one of its tracks.',
+        );
+      }
+      if (featured.containsKey(name)) {
+        throw StateError('$name is featured twice.');
+      }
+      featured[name] = index;
+    }
+  }
+  int rank(Map<String, Object?> track) =>
+      featured[track['id']] ?? featured.length;
   final ordered = tracks.values.toList()
     ..sort((a, b) {
       final bySection = sectionOrder[a['section']]!.compareTo(
         sectionOrder[b['section']]!,
       );
-      return bySection != 0
-          ? bySection
+      if (bySection != 0) return bySection;
+      final byFeature = rank(a).compareTo(rank(b));
+      return byFeature != 0
+          ? byFeature
           : (a['id']! as String).compareTo(b['id']! as String);
     });
 
@@ -249,6 +276,7 @@ Future<void> main() async {
     'sections': <Object?>[
       for (final section in sections)
         <String, Object?>{
+          if (section['featured'] != null) 'featured': section['featured'],
           'id': section['id'],
           'localizations': section['localizations'],
         },
